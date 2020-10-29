@@ -12,12 +12,12 @@ const Activities = () => {
 
       <hr class="mt-2 mb-5" />
       <div class="row text-center">
-        <Activity />
-        <Activity />
-        <Activity />
-        <Activity />
-        <Activity />
-        <Activity />
+        {[1,2,3,4].map((number, index) => (
+            index % 2 === 0 ?
+                <Activity color="#2994A4" /> :
+                <Activity color="#C84E56" /> 
+        )
+        )}
       </div>
     </div>
   );

@@ -38,11 +38,12 @@
 .acivity-container button:hover,
 .acivity-container button:focus,
 .acivity-container button:active {
-    background-color: #5ca7b3;
+    opacity: 0.9;
     color: white;
     border: none;
     outline: none;
     box-shadow: none;
+
 }
 
 
