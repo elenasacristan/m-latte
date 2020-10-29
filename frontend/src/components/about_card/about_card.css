@@ -1,0 +1,11 @@
+
+.about-card-container{
+    border: 1px solid black;
+    border-radius:5px;
+    max-width: 380px;
+}
+
+.about-card-container p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
