@@ -5,7 +5,7 @@ import { RiMenu3Line } from 'react-icons/ri';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <a className="navbar-brand" href="#">
         <img src={Logo} alt="logo" />
       </a>

@@ -7,8 +7,8 @@ import Activities from "./components/activities/activities";
 const App = () => {
   return (
     <>
-      {/* <NavBar />
-      <About /> */}
+      <NavBar />
+      {/* <About /> */}
       <Activities />
     </>
   );
