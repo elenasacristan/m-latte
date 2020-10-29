@@ -1,6 +1,6 @@
-import React from "react";
-import "./about.css";
-import About_card from "../about_card/about_card";
+import React from 'react';
+import './about.css';
+import About_card from '../about_card/about_card';
 
 
 const About = () => {

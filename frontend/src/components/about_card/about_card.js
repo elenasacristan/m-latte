@@ -1,8 +1,8 @@
-import React from "react";
-import "./about_card.css";
-import { GiBullseye } from "react-icons/gi";
-import { GrDiamond } from "react-icons/gr";
-import { FaEye } from "react-icons/fa";
+import React from 'react';
+import './about_card.css';
+import { GiBullseye } from 'react-icons/gi';
+import { GrDiamond } from 'react-icons/gr';
+import { FaEye } from 'react-icons/fa';
 
 const About_card = () => {
   return (

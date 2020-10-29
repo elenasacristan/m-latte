@@ -1,7 +1,7 @@
-import React from "react";
-import Logo from "../../common/images/logo.png";
-import "./navbar.css";
-import { RiMenu3Line } from "react-icons/ri";
+import React from 'react';
+import Logo from '../../common/images/logo.png';
+import './navbar.css';
+import { RiMenu3Line } from 'react-icons/ri';
 
 const NavBar = () => {
   return (
