@@ -6,7 +6,7 @@ const CardDetail = () => {
   return (
     <div className="card-detail mx-auto">
       <FaUsers className="card-detail-icon" color="#FF6C6C" size="3.5rem"/>
-      <h3 className="text-center">Destinatarios</h3>
+      <h3 className="text-center text-lg-left pl-lg-4">Destinatarios</h3>
       <ul>
         <li>Colegios</li>
         <li>Entidades sociales que trabajen con infancia y juventud, etc.</li>

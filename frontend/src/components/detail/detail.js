@@ -6,7 +6,7 @@ import CardDetail from "../card_detail/card_detail";
 const Detail = () => {
   return (
     <div className="detail mx-auto container">
-      <h3 className="font-weight-light text-center text-lg-left mt-4 mb-5 container">
+      <h3 className="font-weight-light text-center text-lg-left mt-4 mb-5">
         Conciertos Pedagogicos
       </h3>
 
@@ -14,7 +14,7 @@ const Detail = () => {
         <div className="col-12 col-md-6 col-lg-5 col-xl-4">
           <img className="w-100 mb-5" src={Pedagogico} />
         </div>
-        <div className="col-12 col-md-6 col-lg-7 col-xl-8">
+        <div className="col-12 col-md-6 col-lg-7 col-xl-8 pl-lg-5">
           <p className="text-justify">
             Consectetur cillum anim adipisicing velit officia sint tempor velit
             do ullamco esse. Amet excepteur labore adipisicing ea. Eu pariatur
