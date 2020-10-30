@@ -6,6 +6,7 @@ import Activities from "./components/activities/activities";
 import Detail from "./components/detail/detail";
 import Discografia from "./components/discografia/discografia";
 import Fotos from "./components/fotos/fotos";
+import Videos from "./components/videos/videos";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       {/* <Activities /> */}
       {/* <Detail />
       <Discografia/> */}
-      <Fotos />
+      {/* <Fotos /> */}
+      <Videos/>
     </>
   );
 };

@@ -1,0 +1,20 @@
+.videos {
+    padding-top: 90px;
+    width: 90%;
+}
+
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+@media only screen and (min-width: 608px) {
+    .videos {
+        width: 100%;
+    }
+    .videos-container {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
