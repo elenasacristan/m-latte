@@ -4,7 +4,7 @@ import Foto from "../foto/foto";
 
 const Fotos = () => {
   return (
-    <div class="fotos container">
+    <div class="fotos container px-2">
       <h2 className="font-weight-light text-center text-lg-left mt-4 mb-5">
         Fotos
       </h2>
