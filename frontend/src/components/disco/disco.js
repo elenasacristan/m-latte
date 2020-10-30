@@ -1,8 +1,7 @@
 import React from "react";
 import "./disco.css";
-import Pedagogico from "../../common/images/Pedagogicos.png";
 
-const Disco= ({ color }) => {
+const Disco= () => {
   return (
     <div class="col-lg-4 col-md-6 col-12 mb-5">
       <div className="d-block mb-4 disco-container mx-auto">

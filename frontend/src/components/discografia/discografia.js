@@ -1,7 +1,6 @@
 import React from "react";
 import "./discografia.css";
 import Disco from "../disco/disco";
-import Pedagogico from "../../common/images/Pedagogicos.png";
 
 const Discografia = () => {
   return (
@@ -12,7 +11,7 @@ const Discografia = () => {
 
       <div class="row text-center">
         {[1, 2, 3, 4].map((number) => (
-          <Disco color="#2994A4" />
+          <Disco />
         ))}
       </div>
     </div>

@@ -44,8 +44,7 @@
 .discografia button:focus,
 .discografia button:active {
     opacity: 0.9;
-    color: rgb(78, 78, 78);
-    border: 2px solid rgb(78, 78, 78);
+    background-color: #2994a48f;
     outline: none;
     box-shadow: none;
 
