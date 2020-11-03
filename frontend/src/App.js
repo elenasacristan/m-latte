@@ -12,12 +12,12 @@ const App = () => {
   return (
     <>
       <NavBar />
-      {/* <About /> */}
+      <About />
       {/* <Activities /> */}
-      {/* <Detail />
-      <Discografia/> */}
+      {/* <Detail />*/}
       {/* <Fotos /> */}
-      <Videos/>
+      {/* <Videos/> */}
+      {/* <Audios/> */}
     </>
   );
 };

@@ -1,3 +1,51 @@
-.discografia{
-    padding-top: 90px;
+/* .discografia{
+margin-left: 70px;
+} */
+
+.disco-wrapper {
+    width: 100%;
+    padding-left: 40px;
+    border-left: 2px solid rgb(192, 188, 188);
+}
+
+.discografia-item {
+    position: relative;
+    width: 100%;
+    margin-top: 55px;
+}
+
+
+/* .discografia-text-container {
+    padding-left: 40px;
+} */
+
+.discografia h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.discografia h5 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+.discografia p {
+    margin-top: 20px;
+
+}
+
+
+.discografia-item::after {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    content: attr(data-year);
+    display: block;
+    background-color: #C84E56;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 25px 0px;
+    font-size: 18px
 }
