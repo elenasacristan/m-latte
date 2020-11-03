@@ -14,21 +14,21 @@
 
 }
 
-.right {
+.foto-container .right {
     transform: rotate(4deg);
 }
 
-.left {
+.foto-container .left {
     transform: rotate(-5deg);
 }
 
 
 @media only screen and (min-width: 768px) {
-    .right {
+    .foto-container .right {
         transform: rotate(0deg);
     }
     
-    .left {
+    .foto-container .left {
         transform: rotate(0);
     }
 }

@@ -1,4 +1,16 @@
-.about{
+.about {
     padding-top: 90px;
-    width:80%;
+    width: 90%;
+}
+
+.about-marta {
+    margin: 40px auto;
+    box-shadow: 20px -20px 1px 1px #23798429;
+}
+
+@media screen and (min-width: 700px) {
+    .about {
+        padding-top: 90px;
+        width: 80%;
+    }
 }

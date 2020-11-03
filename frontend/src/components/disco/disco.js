@@ -1,17 +1,21 @@
 import React from "react";
 import "./disco.css";
+import Pedagogico from "../../common/images/Pedagogicos.png";
 
-const Disco= () => {
+
+const Disco= ({ side }) => {
   return (
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div className="d-block mb-4 disco-container mx-auto">
-        <h2 className="mt-4 mx-auto">Pedagogico</h2>
-        <h3 className="py-2">Marta Revuelta</h3>
-      </div>
-      <button className="btn btn-sm mb-4 mx-auto">
-        Detalles
-      </button>
-    </div>
+    <div class={`timeline-item timeline-${side}`}>
+          <div class="timeline-content text-center">
+            <h2>2017</h2>
+            <h3>Takisunchis</h3>
+            <h5>Marta Revuelta</h5>
+            <div className="d-flex justify-content-center">
+              <img src={Pedagogico} />
+            </div>
+            <p>Canciones para niños</p>
+          </div>
+        </div>
   );
 };
 
