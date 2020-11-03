@@ -8,9 +8,40 @@
     box-shadow: 20px -20px 1px 1px #23798429;
 }
 
+.discografia-container {
+    position: relative;
+    margin-top: 100px;
+    transform: skew(0deg, -8deg) translateY(-20px);
+}
+
+.discografia-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(rgb(240, 240, 240) 10%, rgb(255, 255, 255) 90%);
+}
+
+html {
+    overflow-x: hidden;
+}
+
 @media screen and (min-width: 700px) {
     .about {
         padding-top: 90px;
         width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .discografia-container {
+        margin-top: 90px;
+    }
+
+    .discografia-container:before {
+        width: 25vw;
     }
 }

@@ -36,7 +36,7 @@ const About = () => {
             música inmersiva en personas con trastornos neurodegenerativos.
           </p>
         </div>
-        <div className="col-12 offset-xl-1 col-xl-4">
+        <div className="col-12 offset-xl-1 col-xl-4 discografia-container">
           <Discografia />
         </div>
       </div>

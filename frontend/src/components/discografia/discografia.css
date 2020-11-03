@@ -1,4 +1,10 @@
 /* The actual timeline (the vertical ruler) */
+.discografia{
+    padding-top: 100px;
+    transform: skew(0deg, 8deg) translateY(-20px);
+
+}
+
 .timeline {
     position: relative;
     margin: 0 auto;
