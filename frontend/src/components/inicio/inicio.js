@@ -17,7 +17,7 @@ const Inicio = () => {
         </div>
       </div>
       <div className="inicio-proposito container">
-        <div className="row pt-4 d-flex justify-content-center">
+        <div className="row pt-5 pb-3 d-flex justify-content-center">
           <About_card />
           <About_card />
           <About_card />

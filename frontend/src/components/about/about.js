@@ -6,11 +6,13 @@ import Marta from "../../common/images/Marta.JPG";
 const About = () => {
   return (
     <div className="about mx-auto container">
+    {/* <h2 className="title">Sobre Mi</h2> */}
+    {/* <hr/> */}
       <div className="row">
-        <div className="col-12 col-xl-7">
-          <h2>Sobre Mi</h2>
+        <div className="col-12 col-xl-7 about-marta">
+          <h2 className="mb-2 title">Sobre Mi:</h2>
           <h4>Marta Revuelta</h4>
-          <img className="img-fluid about-marta" src={Marta} />
+          <img className="img-fluid" src={Marta} />
           <p className="about-marta-description">
             Cantante, maestra de música y educadora social, con amplia
             experiencia en impartición de talleres de musicoterapia para

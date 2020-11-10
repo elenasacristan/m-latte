@@ -6,7 +6,7 @@ import Pedagogico from "../../common/images/Pedagogicos.png";
 const Discografia = () => {
   return (
     <div className="discografia">
-      <h4 className="font-weight-light text-center mt-4 mb-5">
+      <h4 className="font-weight-light text-center my-5">
         Discografía y colaboraciones
       </h4>
       <div class="timeline">
