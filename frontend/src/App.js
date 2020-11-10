@@ -15,14 +15,15 @@ const App = () => {
   return (
     <>
       <NavBar />
-      {/* <About /> */}
+      <Inicio/>
+      <About />
       {/* <Activities /> */}
       {/* <Detail />*/}
       {/* <Fotos /> */}
       {/* <Videos/> */}
       {/* <Audios/> */}
       {/* <About_card /> */}
-      <Inicio/>
+   
     </>
   );
 };

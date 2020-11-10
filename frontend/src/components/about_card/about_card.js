@@ -1,21 +1,19 @@
 import React from "react";
 import "./about_card.css";
-import { GiBullseye } from "react-icons/gi";
-import { GrDiamond } from "react-icons/gr";
-import { FaEye } from "react-icons/fa";
+
 
 const About_card = () => {
   return (
     <div className="col-md-4">
-      <div className="about-card-container d-flex flex-column mb-md-5">
+      <div className="about-card-container d-flex flex-column mx-auto mb-4 mb-md-0">
         <div className="d-flex align-items-center pb-3">
-          <GiBullseye size="2rem" color="#4F9BA6" />
+         <i class="fa fa-bullseye"></i>
           <h4 className="ml-2">Proposito</h4>
         </div>
-        <ul className="pr-2 pl-4">
-          <li>Consectetur cillum anim adipisicing velit officia</li>
-          <li>Consectetur cillum anim adipisicing velit officia</li>
-          <li>Consectetur cillum anim adipisicing velit officia</li>
+        <ul className="pr-2 pl-3">
+          <li>Concienciar del poder que tiene la musica en la salud</li>
+          <li>Dotar de musica al entorno laboral y personal</li>
+          <li>Poner el foco ne las personal en riesgo de exclusion social</li>
         </ul>
       </div>
     </div>

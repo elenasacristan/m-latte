@@ -1,18 +1,22 @@
 .about-card-container {
-   border-radius: 5px;
-    max-width: 380px;
+    border-radius: 5px;
+    max-width: 250px;
 }
 
-.about-card-container h4{
-text-transform: uppercase;
-font-size: 1rem;
-font-family: Montserrat, sans-serif;
-font-weight: 800;
-color: #5E5E5E;
+.about-card-container .fa {
+    color: #4F9BA6;
+    font-size: 2rem;
+}
+
+.about-card-container h4 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    color: #5E5E5E;
 }
 
 .about-card-container ul {
     text-align: justify;
     font-size: 0.7rem;
 }
-
