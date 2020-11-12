@@ -6,7 +6,7 @@ import Hacemos_item from "../hacemos-item/Hacemos_item";
 
 const Inicio = () => {
   return (
-    <div class="inicio">
+    <div className="inicio">
       <div className="inicio-banner">
         <img src={banner} />
         <div className="container-sentence d-flex">
@@ -17,7 +17,7 @@ const Inicio = () => {
         </div>
       </div>
       <div className="inicio-proposito container">
-        <div className="row pt-5 pb-3 d-flex justify-content-center">
+        <div className="row pt-4 pb-0 d-flex justify-content-center">
           <About_card />
           <About_card />
           <About_card />
@@ -35,8 +35,6 @@ const Inicio = () => {
             <Hacemos_item />
           </div>
         </div>
-
-       
       </div>
     </div>
   );

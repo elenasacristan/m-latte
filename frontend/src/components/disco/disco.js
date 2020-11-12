@@ -5,8 +5,8 @@ import Pedagogico from "../../common/images/Pedagogicos.png";
 
 const Disco= ({ side }) => {
   return (
-    <div class={`timeline-item timeline-${side}`}>
-          <div class="timeline-content text-center">
+    <div className={`timeline-item timeline-${side}`}>
+          <div className="timeline-content text-center">
             <h2>2017</h2>
             <h3>Takisunchis</h3>
             <h5>Marta Revuelta</h5>

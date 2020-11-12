@@ -6,10 +6,10 @@ import Pedagogico from "../../common/images/Pedagogicos.png";
 const Discografia = () => {
   return (
     <div className="discografia">
-      <h4 className="font-weight-light text-center my-5">
+      <h4 className="text-center my-5">
         Discografía y colaboraciones
       </h4>
-      <div class="timeline">
+      <div className="timeline">
         {[1, 2, 3, 4].map((number) =>
           number % 2 === 0 ? <Disco side="left" /> : <Disco side="right" />
         )}
