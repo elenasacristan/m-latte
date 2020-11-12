@@ -1,0 +1,40 @@
+.footer {
+    background-color: #383838;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.footer h6 {
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+.footer p {
+    font-size: 0.7rem;
+}
+
+.footer .fa {
+    color:white;
+    font-size: 1.5rem;
+    transition: all .5s ease;
+}
+
+.footer .fa:hover {
+    color: #acacac;
+}
+
+
+@media screen and (min-width: 400px) {
+    .footer h6 {
+        font-size: 0.8rem;
+    }
+    .footer p {
+        font-size: 0.8rem;
+    }
+    
+    .footer .fa {
+        font-size: 2rem;
+    }
+   
+
+}
