@@ -11,7 +11,7 @@ const Videos = () => {
 
         <div className="videos-container text-center">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((number) => (
-            <Video videoId={"rP01vTovcZk"} title={"test_title"} />
+            <Video key={number} videoId={"rP01vTovcZk"} title={"test_title"} />
           ))}
         </div>
       </div>

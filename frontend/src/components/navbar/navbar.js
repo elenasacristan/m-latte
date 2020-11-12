@@ -39,7 +39,7 @@ const NavBar = () => {
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -65,7 +65,7 @@ const NavBar = () => {
           <li className="nav-item dropdown">
             <Link
               className="nav-link dropdown-toggle"
-              href="#"
+              to="#"
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"

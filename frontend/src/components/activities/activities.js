@@ -12,9 +12,9 @@ const Activities = ({ match }) => {
       <div className="row text-center">
         {[1, 2, 3, 4].map((number, index) =>
           index % 2 === 0 ? (
-            <Activity tipo={match.params.tipo} color="#2994A4" />
+            <Activity key={number} tipo={match.params.tipo} color="#2994A4" />
           ) : (
-            <Activity tipo={match.params.tipo} color="#C84E56" />
+            <Activity key={number} tipo={match.params.tipo} color="#C84E56" />
           )
         )}
       </div>
