@@ -7,7 +7,7 @@ const About_card = () => {
     <div className="col-md-4">
       <div className="about-card-container d-flex flex-column mx-auto mb-4 mb-md-0">
         <div className="d-flex align-items-center pb-3">
-         <i class="fa fa-bullseye"></i>
+         <i className="fa fa-bullseye"></i>
           <h4 className="ml-2">Proposito</h4>
         </div>
         <ul className="pr-2 pl-3">

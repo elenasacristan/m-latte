@@ -5,9 +5,7 @@ import Marta from "../../common/images/Marta.JPG";
 
 const About = () => {
   return (
-    <div className="about mx-auto container">
-    {/* <h2 className="title">Sobre Mi</h2> */}
-    {/* <hr/> */}
+    <div className="about mt-5 mx-auto container" id="about">
       <div className="row">
         <div className="col-12 col-xl-7 about-marta">
           <h2 className="mb-2 title">Sobre Mi:</h2>

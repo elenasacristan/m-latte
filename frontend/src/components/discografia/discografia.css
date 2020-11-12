@@ -1,13 +1,14 @@
 /* The actual timeline (the vertical ruler) */
-.discografia{
+.discografia {
     transform: skew(0deg, 8deg) translateY(-20px);
     padding-top: 100px;
 }
 
-.discografia h4{
-    color: #4b4b4b;
-    font-size: 1.5rem;
-    font-weight: bold;
+.discografia h4 {
+    color: #4a94a0;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding-bottom: 50px;
 }
 
 .timeline {
@@ -16,8 +17,17 @@
 }
 
 
+@media screen and (min-width: 400px) {
+    .discografia h4 {
+        font-size: 1.8rem;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-    .discografia{
+    .discografia h4 {
+        padding-bottom: 0px;
+    }
+    .discografia {
         padding-top: 0px;
         transform: skew(0deg, 0deg) translateY(-20px);
     }
