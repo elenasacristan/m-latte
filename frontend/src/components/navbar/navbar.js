@@ -1,14 +1,15 @@
-import React from 'react';
-import Logo from '../../common/images/logo.png';
-import './navbar.css';
-import { RiMenu3Line } from 'react-icons/ri';
+import React from "react";
+import Logo from "../../common/images/logo.png";
+import { Link } from "react-router-dom";
+import "./navbar.css";
+import { RiMenu3Line } from "react-icons/ri";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         <img src={Logo} alt="logo" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -18,7 +19,7 @@ const NavBar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <RiMenu3Line className="hamburguer-button" size="2rem"/>
+        <RiMenu3Line className="hamburguer-button" size="2rem" />
       </button>
       <div
         className="collapse navbar-collapse justify-content-center"
@@ -26,17 +27,17 @@ const NavBar = () => {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="/">
               Inicio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Quienes Somos
-            </a>
+            <Link className="nav-link" to="/SobreMi">
+              Sobre Mi
+            </Link>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle"
               href="#"
               id="navbarDropdownMenuLink"
@@ -45,24 +46,24 @@ const NavBar = () => {
               aria-expanded="false"
             >
               Actividades
-            </a>
+            </Link>
             <div
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
+              <Link className="dropdown-item" to="/actividades/Conciertos">
                 Conciertos
-              </a>
-              <a className="dropdown-item" href="#">
+              </Link>
+              <Link className="dropdown-item" to="/actividades/Talleres">
                 Talleres
-              </a>
-              <a className="dropdown-item" href="#">
+              </Link>
+              <Link className="dropdown-item" to="/actividades/Otros">
                 Otros
-              </a>
+              </Link>
             </div>
           </li>
           <li className="nav-item dropdown">
-            <a
+            <Link
               className="nav-link dropdown-toggle"
               href="#"
               id="navbarDropdownMenuLink"
@@ -71,35 +72,27 @@ const NavBar = () => {
               aria-expanded="false"
             >
               Galería
-            </a>
+            </Link>
             <div
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
+              <Link className="dropdown-item" to="/fotos">
                 Fotos
-              </a>
-              <a className="dropdown-item" href="#">
+              </Link>
+              <Link className="dropdown-item" to="/videos">
                 Videos
-              </a>
-              <a className="dropdown-item" href="#">
-                Audios
-              </a>
+              </Link>
             </div>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Discografía
+              Colabora
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Quieres colaborar
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-             Contacto
+              Contacto
             </a>
           </li>
         </ul>

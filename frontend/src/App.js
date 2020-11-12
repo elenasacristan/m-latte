@@ -1,29 +1,31 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import NavBar from "./components/navbar/navbar";
-import About_card from "./components/about_card/about_card";
-import About from "./components/about/about";
-import Activities from "./components/activities/activities";
 import Detail from "./components/detail/detail";
-import Discografia from "./components/discografia/discografia";
+import Main from "./components/main/main";
+import Activities from "./components/activities/activities";
 import Fotos from "./components/fotos/fotos";
 import Videos from "./components/videos/videos";
-import Inicio from "./components/inicio/inicio";
-
+import About from "./components/about/about";
+import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
     <>
+      <Router>
       <NavBar />
-      <Inicio/>
-      <About />
-      {/* <Activities /> */}
-      {/* <Detail />*/}
-      {/* <Fotos /> */}
-      {/* <Videos/> */}
-      {/* <Audios/> */}
-      {/* <About_card /> */}
-   
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/SobreMi" component={About} />
+          <Route exact path="/actividades/:tipo" component={Activities} />
+          <Route exact path="/actividades/:tipo/:actividadId" component={Detail} />
+          <Route exact path="/fotos" component={Fotos} />
+          <Route exact path="/videos" component={Videos} />    
+        </Switch>
+        <Footer/>
+      </Router>
     </>
   );
 };

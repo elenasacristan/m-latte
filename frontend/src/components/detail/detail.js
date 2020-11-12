@@ -3,11 +3,11 @@ import "./detail.css";
 import Pedagogico from "../../common/images/Pedagogicos.png";
 import CardDetail from "../card_detail/card_detail";
 
-const Detail = () => {
+const Detail = ({ match }) => {
   return (
     <div className="detail mx-auto container">
       <h3 className="font-weight-light text-center text-lg-left mt-4 mb-5">
-        Conciertos Pedagogicos
+        {match.params.actividadId}
       </h3>
 
       <div className="row">

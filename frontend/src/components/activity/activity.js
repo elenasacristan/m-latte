@@ -1,14 +1,21 @@
 import React from "react";
 import "./activity.css";
+import { Link } from "react-router-dom";
 import Pedagogico from "../../common/images/Pedagogicos.png";
 
-const Activity = ({ color }) => {
+const Activity = ({ color, tipo }) => {
   return (
     <div class="col-lg-4 col-md-6 col-12">
       <div className="d-block mb-4 h-100 acivity-container">
-        <img class="img-fluid" src={Pedagogico} />
+        <img className="img-fluid" src={Pedagogico} />
         <h2 className="mt-4 mx-auto">Pedagogico</h2>
-        <button style={{'background-color':color}} className="btn btn-lg mb-4">Detalles</button>
+        <Link
+          to={`/actividades/${tipo}/Conciertos pedagogicos`}
+          style={{ "background-color": color }}
+          className="btn btn-lg mb-4"
+        >
+          Detalles
+        </Link>
       </div>
     </div>
   );

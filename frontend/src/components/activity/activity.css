@@ -19,7 +19,7 @@
     font-family: 'Palanquin Dark', sans-serif;
 }
 
-.acivity-container button {
+.acivity-container a {
     position: absolute;
     text-align: center;
     bottom:10px;
@@ -35,9 +35,9 @@
     color: white;
 }
 
-.acivity-container button:hover,
-.acivity-container button:focus,
-.acivity-container button:active {
+.acivity-container a:hover,
+.acivity-container a:focus,
+.acivity-container a:active {
     opacity: 0.9;
     color: white;
     border: none;
