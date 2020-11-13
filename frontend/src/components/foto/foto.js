@@ -1,13 +1,12 @@
 import React from "react";
 import "./foto.css";
-import Pedagogicos from "../../common/images/Pedagogicos.png";
 
-const Foto = ({ rotate }) => {
+const Foto = ({ rotate, foto }) => {
   return (
-    <div className={`mb-5 foto-container mx-auto ${rotate}`}>
-      <img src={Pedagogicos} />
+    <div className={`mb-4 foto-container mx-auto ${rotate}`}>
+      <img src={foto.foto} />
       <h6 className="mt-4">
-        Foto taller alegría
+      {foto.titulo}
       </h6>
     </div>
   );

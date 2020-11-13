@@ -1,10 +1,19 @@
-.fotos{
+.fotos {
     padding-top: 90px;
     width: 70%;
 }
 
-@media only screen and (min-width: 768px) {
-    .fotos{
+.fotos-container {
+    column-count: 1; 
+    column-gap: 2rem; 
+}
+
+@media only screen and (min-width: 992px) {
+    .fotos {
         width: 100%;
+    }
+    .fotos-container {
+        column-count: 2;
+        line-height: 0;
     }
 }
