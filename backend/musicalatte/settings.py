@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'quienes_somos',
     'inicio',
     'sobre_mi',
-    'actividades'
+    'actividades',
+    'galeria'
 ]
 
 MIDDLEWARE = [
