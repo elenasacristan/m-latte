@@ -19,7 +19,7 @@ const About = () => {
     return (
       <div className="about mt-5 mx-auto container" id="about">
         <div className="row">
-          <div className="col-12 col-xl-7 about-marta">
+          <div className="col-12 col-xl-5 about-marta">
             <h2 className="mb-2 title">{aboutMe.titulo1}</h2>
             <h4>{aboutMe.titulo2}</h4>
             <img className="img-fluid" src={aboutMe.imagen_marta} />
@@ -30,7 +30,7 @@ const About = () => {
               </p>
             ))}
           </div>
-          <div className="col-12 offset-xl-1 col-xl-4 discografia-container">
+          <div className="col-12 offset-xl-1 col-xl-6 discografia-container">
             <Discografia />
           </div>
         </div>
