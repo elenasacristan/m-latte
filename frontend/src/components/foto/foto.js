@@ -5,7 +5,7 @@ const Foto = ({ rotate, foto }) => {
   return (
     <div className={`mb-4 foto-container mx-auto ${rotate}`}>
       <img src={foto.foto} />
-      <h6 className="mt-4">
+      <h6 className="mt-4 text-center">
       {foto.titulo}
       </h6>
     </div>

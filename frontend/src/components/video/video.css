@@ -4,6 +4,8 @@
     width: 100%;
     padding-bottom: 54.5%;
     height: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
   }
   
   .video-container iframe {
@@ -12,8 +14,18 @@
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 8px;
+    border-radius: 40px;
   }
-
+  
+  .big{
+    width:80vw;
+    height: 80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
   @media only screen and (min-width: 608px) {
     .video-container {

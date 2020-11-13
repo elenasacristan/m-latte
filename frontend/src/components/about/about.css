@@ -3,12 +3,6 @@
     padding-top: 60px;
 }
 
-.about .title {
-    color: #d2d2d2;
-    font-weight: bolder;
-    font-size: 2rem;
-    font-family: 'Montserrat';
-}
 
 .about-marta {
     position: relative;
@@ -17,7 +11,7 @@
 
 .about-marta h4 {
     position: absolute;
-    top: 67px;
+    top: 57px;
     left: 30px;
     font-family: 'Molle', cursive;
     color: #3690a0;
@@ -58,7 +52,7 @@ html {
     }
 
     .about-marta h4 {
-        top: 60px;
+        top: 51px;
     }
 
 }
@@ -73,7 +67,7 @@ html {
 
     .about-marta h4 {
         font-size: 2.1rem;
-        top: 67px;
+        top: 92px;
         left: 45px;
     }
 
