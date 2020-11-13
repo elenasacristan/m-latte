@@ -11,7 +11,7 @@ class TipoActividad(models.Model):
 
 
 class Actividad(models.Model):
-    tipo_actividad = models.ForeignKey(TipoActividad, on_delete=models.CASCADE)
+    tipo_actividad = models.ForeignKey(TipoActividad, related_name='actividades', on_delete=models.CASCADE)
     foto = models.ImageField(upload_to="images", null=True, blank=True)
     titulo =  models.CharField(max_length=100, null=True, blank=True)
     text_boton = models.CharField(max_length=30, null=True, blank=True)
