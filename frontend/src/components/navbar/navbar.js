@@ -114,7 +114,7 @@ const NavBar = () => {
               Colabora
             </Link>
             <Link onClick={closeDropDown} className="nav-link" to="/Contacto">
-            Contacto
+              Contacto
             </Link>
           </ul>
         </div>

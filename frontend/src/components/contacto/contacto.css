@@ -1,0 +1,11 @@
+.contacto{
+    height: 100%;
+    padding-top: 12vh;
+    max-width: 700px;
+}
+
+@media screen and (min-width: 767px) {
+    .colabora{
+        height: 70vh;
+    }
+}
