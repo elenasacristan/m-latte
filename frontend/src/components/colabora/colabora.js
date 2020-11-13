@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./colabora.css";
 
 const Colabora = () => {
-  return (
-    <div className="colabora mx-auto container text-center">
-      <h2 className="mt-4 mb-5">Quieres colaborar?</h2>
-      <p className="mx-2">
-        Si eres de los que sabe que la música tiene un gran poder en las
-        personas y quieres ayudarnos a seguir acercársela a todos, estaremos
-        encantados si quieres hacer alguna donación en el siguiente número de
-        cuenta:
-      </p>
-      <p className="mx-2">ES2500730100500615247246</p>
-      <hr/>
-      <p className="mx-2">
-        Si quieres contactar con nosotros por este u otro motivo, pulsa
-        <Link to="/contacto"> aquí</Link>
-      </p>
-    </div>
-  );
+  const [colabora, setColabora] = useState({});
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/colabora/Colabora/")
+      .then((res) => res.json())
+      .then((data) => setColabora(data[0]));
+  }, []);
+
+  if (Object.keys(colabora).length < 1) {
+    return "loading";
+  } else {
+    return (
+      <div className="colabora mx-auto container text-center">
+        <h2 className="mt-4 mb-5">{colabora.titulo}</h2>
+        <p className="mx-2">{colabora.texto1}</p>
+        <p className="mx-2">{colabora.n_cuenta}</p>
+        <hr />
+        <p className="mt-5 mx-2">
+          {colabora.texto2}
+          <Link to="/contacto"> {colabora.palabra_link} </Link>
+          {colabora.texto3}
+        </p>
+      </div>
+    );
+  }
 };
 
 export default Colabora;
