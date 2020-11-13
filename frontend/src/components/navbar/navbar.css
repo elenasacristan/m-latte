@@ -1,3 +1,7 @@
+.open{
+    display: block;
+}
+
 .navbar {
     background-color: #C84E56;
 }

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../common/images/logo.png";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { RiMenu3Line } from "react-icons/ri";
 
 const NavBar = () => {
+  const [openDropDown, setOpenDropDown] = useState('open');
+
+  const closeDropDown = () => {
+    setOpenDropDown(openDropDown ? '':'open');
+  };
+
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <Link to="/" className="navbar-brand">
@@ -22,17 +28,17 @@ const NavBar = () => {
         <RiMenu3Line className="hamburguer-button" size="2rem" />
       </button>
       <div
-        className="collapse navbar-collapse justify-content-center"
+        className={`${openDropDown} collapse navbar-collapse justify-content-center`}
         id="navbarNavDropdown"
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link onClick={closeDropDown} className="nav-link" to="/">
               Inicio
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/SobreMi">
+            <Link onClick={closeDropDown}  className="nav-link" to="/SobreMi">
               Sobre Mi
             </Link>
           </li>
@@ -51,13 +57,13 @@ const NavBar = () => {
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <Link className="dropdown-item" to="/actividades/Conciertos">
+              <Link onClick={closeDropDown} className="dropdown-item" to="/actividades/Conciertos">
                 Conciertos
               </Link>
-              <Link className="dropdown-item" to="/actividades/Talleres">
+              <Link onClick={closeDropDown} className="dropdown-item" to="/actividades/Talleres">
                 Talleres
               </Link>
-              <Link className="dropdown-item" to="/actividades/Otros">
+              <Link onClick={closeDropDown} className="dropdown-item" to="/actividades/Otros">
                 Otros
               </Link>
             </div>
@@ -77,10 +83,10 @@ const NavBar = () => {
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <Link className="dropdown-item" to="/fotos">
+              <Link onClick={closeDropDown} className="dropdown-item" to="/fotos">
                 Fotos
               </Link>
-              <Link className="dropdown-item" to="/videos">
+              <Link onClick={closeDropDown} className="dropdown-item" to="/videos">
                 Videos
               </Link>
             </div>
