@@ -12,8 +12,8 @@ urlpatterns = [
     path('api/actividades/', include('actividades.api.urls')),
     path('api/galeria/', include('galeria.api.urls')),
     path('api/colabora/', include('colabora.api.urls')),
-    path('api/footer/', include('footer.api.urls'))
-
+    path('api/footer/', include('footer.api.urls')),
+    path('api/contacto/', include('contacto.api.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

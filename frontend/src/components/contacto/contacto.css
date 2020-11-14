@@ -1,11 +1,41 @@
 .contacto{
-    height: 100%;
     padding-top: 12vh;
-    max-width: 700px;
+    max-width: 500px;
 }
 
-@media screen and (min-width: 767px) {
-    .colabora{
-        height: 70vh;
-    }
+.contacto label{
+    margin-bottom: 0;
+}
+
+.contacto .btn{
+    background-color: #3690a0;
+    color: white;
+    padding-bottom: 0;
+    border: none;
+}
+
+.contacto .btn:hover, .contacto .btn:active, .contacto .btn:focus{
+    background-color: #509ba8;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.success-msg, .error-msg {
+ color:white;
+ border-radius: 5px;
+}
+
+.success-msg {
+background-color: rgb(115 199 118);
+}
+
+.error-msg {
+    background-color: rgb(255 120 11 / 58%);
+}
+
+.error-email{
+    color:red;
+    font-size:0.8rem;
 }

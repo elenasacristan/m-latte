@@ -110,12 +110,16 @@ const NavBar = () => {
                 </Link>
               </div>
             </li>
-            <Link onClick={closeDropDown} className="nav-link" to="/Colabora">
-              Colabora
-            </Link>
-            <Link onClick={closeDropDown} className="nav-link" to="/Contacto">
-              Contacto
-            </Link>
+            <li className="nav-item">
+              <Link onClick={closeDropDown} className="nav-link" to="/Colabora">
+                Colabora
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link onClick={closeDropDown} className="nav-link" to="/Contacto">
+                Contacto
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
