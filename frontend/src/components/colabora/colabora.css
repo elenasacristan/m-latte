@@ -1,6 +1,8 @@
 .colabora {
     height: 100%;
     padding-top: 12vh;
+    padding-bottom: 12vh;
+
     max-width: 700px;
 }
 
@@ -11,12 +13,12 @@
 }
 
 .colabora a:hover {
-    color:#73a5ad;
+    color: #73a5ad;
     text-decoration: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 450px) {
     .colabora {
-        height: 70vh;
+        height: 85vh;
     }
 }

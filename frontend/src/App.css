@@ -21,6 +21,11 @@ h2 {
     font-weight: bolder;
     font-size: 2rem;
 }
+h3 {
+    color: #797979;
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
 
 @media only screen and (min-width: 576px) {
     h2 {

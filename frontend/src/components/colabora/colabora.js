@@ -15,7 +15,7 @@ const Colabora = () => {
     return "loading";
   } else {
     return (
-      <div className="colabora mx-auto container text-center">
+      <div className="colabora mx-auto text-center">
         <h2 className="mt-4 mb-5">{colabora.titulo}</h2>
         <p className="mx-2">{colabora.texto1}</p>
         <p className="mx-2">{colabora.n_cuenta}</p>

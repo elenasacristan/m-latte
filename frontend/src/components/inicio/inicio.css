@@ -3,8 +3,11 @@
 }
 
 .inicio-banner {
-    background-color: #958792;
     position: relative;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
 }
 
 .inicio-banner .container-sentence {

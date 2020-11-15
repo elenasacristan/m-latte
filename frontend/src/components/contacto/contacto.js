@@ -84,7 +84,7 @@ const Contacto = () => {
   let { nombre, email, descripcion } = contact;
 
   return (
-    <div className="contacto mx-auto container px-4">
+    <div className="contacto mx-auto px-4">
       <h2 className="mt-4 mb-3 text-center">Contacto</h2>
      {errorMessage.error || errorMessage.message ?
      (errorMessage.error ? (

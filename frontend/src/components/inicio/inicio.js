@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./inicio.css";
-import banner from "../../common/images/banner.png";
 import About_card from "../about_card/about_card";
 import Hacemos_item from "../hacemos-item/Hacemos_item";
 
@@ -32,8 +31,7 @@ const Inicio = () => {
   } else {
     return (
       <div className="inicio">
-        <div className="inicio-banner">
-          <img src={inicio.imagen_inicio} />
+        <div className="inicio-banner" style={{ backgroundImage:`url(${inicio.imagen_inicio})` }}>
           <div className="container-sentence d-flex">
             <h3 className="text-center">
               {inicio.frase}
