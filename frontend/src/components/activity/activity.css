@@ -13,7 +13,7 @@
     right: 0;
     top:0;
     width: 75%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     text-shadow: 1px 1px 5px black;
     font-family: 'Palanquin Dark', sans-serif;
@@ -48,10 +48,37 @@
 
 
 @media only screen and (min-width: 350px) {
-    .acivity-container h2 {
-       font-size: 2rem;
-    }
     .acivity-container button {
         font-size: 1.5rem;
      }
+}
+
+@media only screen and (min-width: 380px) {
+    .acivity-container h2 {
+       font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .acivity-container h2 {
+       font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .acivity-container h2 {
+       font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .acivity-container h2 {
+       font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .acivity-container h2 {
+       font-size: 1.6rem;
+    }
 }
