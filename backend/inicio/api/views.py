@@ -7,9 +7,9 @@ class InicioViewSet(viewsets.ModelViewSet):
     serializer_class = InicioSerializer
 
 class QueHacemosViewSet(viewsets.ModelViewSet):
-    queryset = QueHacemos.objects.all()
+    queryset = QueHacemos.objects.all().order_by('id')
     serializer_class = QueHacemosSerializer
 
 class QueQueremosViewSet(viewsets.ModelViewSet):
-    queryset = QueQueremos.objects.all()
+    queryset = QueQueremos.objects.all().order_by('id')
     serializer_class = QueQueremosSerializer

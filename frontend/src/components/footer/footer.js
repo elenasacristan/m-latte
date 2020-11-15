@@ -18,9 +18,9 @@ const Footer = () => {
           <div className="col-sm-6 text-center text-sm-left pb-2 pb-md-0">
             <h6 className="mb-4">{footer.titulo}</h6>
             <p>
-              <span className="d-none d-md-inline">{footer.titulo2}</span>{footer.email}
+              <span className="d-none d-md-inline">{footer.titulo2} </span>{footer.email}
               <br />
-              <span  className="d-none d-md-inline">{footer.titulo2}</span>{footer.telefono}
+              <span  className="d-none d-md-inline">{footer.titulo3} </span>{footer.telefono}
             </p>
           </div>
           <div className="col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center">

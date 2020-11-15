@@ -7,5 +7,5 @@ class TipoActividadViewSet(viewsets.ModelViewSet):
     serializer_class = TipoActividadSerializer
 
 class ActividadViewSet(viewsets.ModelViewSet):
-    queryset = Actividad.objects.all()
+    queryset = Actividad.objects.all().order_by('id')
     serializer_class = ActividadSerializer
