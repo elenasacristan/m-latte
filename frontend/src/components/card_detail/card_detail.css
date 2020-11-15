@@ -1,18 +1,23 @@
 .card-detail{
-    background-color: #EEECEC;
     position: relative;
     width: 100%;
     max-width: 100%;
     margin-bottom: 180px;
+    background-color: white;
+    border: 10px double  #b7d8dd91;
+    transform: rotate(-2deg);
 }
+
 
 .card-detail-icon{
     position: absolute;
-    top:-30px;
+    top:-45px;
+    color: #c84e56;
     width: 100%;
+    font-size: 3.5rem;
 }
 
-.card-detail h3{
+.card-detail h4{
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
@@ -20,7 +25,7 @@
 .card-detail ul{
     padding: 0px 25px 80px;
     margin-left: 35px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .card-detail-circle{

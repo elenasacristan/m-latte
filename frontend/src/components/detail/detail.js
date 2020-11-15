@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./detail.css";
-import Pedagogico from "../../common/images/Pedagogicos.png";
 import CardDetail from "../card_detail/card_detail";
 
 const Detail = ({ match }) => {
@@ -18,24 +17,24 @@ const Detail = ({ match }) => {
     return "loading";
   } else {
     return (
-      <div className="detail mx-auto container">
-        <h3 className="font-weight-light text-center text-lg-left mt-4 mb-5">
-          {actividad.titulo}
-        </h3>
+      <div className="detail">
+        <div className="mx-auto container">
+          <h3 className="text-lg-left mt-4 mb-5">{actividad.titulo}</h3>
 
-        <div className="row">
-          <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-            <img className="w-100 mb-5" src={actividad.foto} />
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+              <img className="w-100 mb-5" src={actividad.foto} />
+            </div>
+            <div className="col-12 col-md-6 col-lg-7 col-xl-8 pl-lg-5">
+              {actividad.descripcion.split("\\").map((parrafo, index) => (
+                <p key={index}>{parrafo}</p>
+              ))}
+            </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-7 col-xl-8 pl-lg-5">
-            {actividad.descripcion.split("\\").map((parrafo, index) => (
-              <p key={index}>{parrafo}</p>
-            ))}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 mt-5 mt-md-2">
-            <CardDetail actividad={actividad} />
+          <div className="row">
+            <div className="col-12 mt-5 mt-md-2">
+              <CardDetail actividad={actividad} />
+            </div>
           </div>
         </div>
       </div>

@@ -1,12 +1,11 @@
 import React from "react";
 import "./card_detail.css";
-import { FaUsers } from "react-icons/fa";
 
 const CardDetail = ({actividad}) => {
   return (
-    <div className="card-detail mx-auto">
-      <FaUsers className="card-detail-icon" color="#FF6C6C" size="3.5rem"/>
-      <h3 className="text-center text-lg-left pl-lg-4">{actividad.titulo2}</h3>
+    <div className="mt-5 card-detail mx-auto">
+      <i className={`text-center card-detail-icon fa ${actividad.logo_name}`}  aria-hidden="true"></i>
+      <h4 className="text-center text-lg-left pl-lg-4">{actividad.titulo2}</h4>
       <ul>
       {actividad.destinatarios.split('\\').map(destinatario => <li key={destinatario}>{destinatario}</li>)}
       </ul>
