@@ -16,15 +16,24 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+.title {
     color: #797979;
     font-weight: bolder;
     font-size: 2rem;
 }
-h3 {
+
+.subtitle {
     color: #797979;
     font-weight: bolder;
     font-size: 1.9rem;
+}
+
+body {
+    /* background-image:url('./common/images/bkg.png'); */
+    /* background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
 }
 
 @media only screen and (min-width: 576px) {
