@@ -20,7 +20,7 @@ const About = () => {
       <div className="about mt-5 mx-auto container" id="about">
         <div className="row">
           <div className="col-12 col-xl-5 about-marta">
-            <h2 className="mb-sm-4">{aboutMe.titulo1}</h2>
+            <h2 className="title mb-sm-4">{aboutMe.titulo1}</h2>
             <h4>{aboutMe.titulo2}</h4>
             <img className="img-fluid" src={aboutMe.imagen_marta} />
 

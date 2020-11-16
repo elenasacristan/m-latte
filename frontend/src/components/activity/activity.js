@@ -7,7 +7,7 @@ const Activity = ({ color, actividad, tipo }) => {
     <div className="col-lg-4 col-md-6 col-12">
       <div className="d-block mb-4 h-100 acivity-container">
         <img className="img-fluid" src={actividad.foto} />
-        <h2 className="mt-4 mx-auto">{actividad.titulo}</h2>
+        <h2 className="title mt-4 mx-auto">{actividad.titulo}</h2>
         <Link
           to={`/actividades/${tipo}/${actividad.id}`}
           style={{ "backgroundColor": color }}

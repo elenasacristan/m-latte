@@ -19,7 +19,7 @@ const Detail = ({ match }) => {
     return (
       <div className="detail">
         <div className="mx-auto container">
-          <h3 className="text-lg-left mt-4 mb-5">{actividad.titulo}</h3>
+          <h3 className="subtitle text-lg-left mt-4 mb-5">{actividad.titulo}</h3>
 
           <div className="row">
             <div className="col-12 col-md-6 col-lg-5 col-xl-4">
