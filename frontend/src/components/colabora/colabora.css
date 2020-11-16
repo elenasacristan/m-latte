@@ -2,23 +2,41 @@
     height: 100%;
     padding-top: 12vh;
     padding-bottom: 12vh;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
+}
 
-    max-width: 700px;
+.colabora img {
+    width: 50%;
+}
+
+.colabora p {
+    font-size: 0.8rem;
 }
 
 .colabora a {
-    color: #3690a0;
+    color: black;
     font-weight: bolder;
     transition: all .5s ease;
 }
 
 .colabora a:hover {
-    color: #73a5ad;
+    color: #525252;
     text-decoration: none;
 }
 
 @media screen and (min-width: 450px) {
+    .colabora p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
     .colabora {
         height: 85vh;
     }
+
+    .colabora img {
+        width: 100%;
+    }
 }
+

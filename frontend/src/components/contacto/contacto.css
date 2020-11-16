@@ -1,21 +1,31 @@
-.contacto{
+.contacto {
     padding-top: 12vh;
-    padding-bottom: 20vh;
-    max-width: 500px;
+    padding-bottom: 12vh;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
 }
 
-.contacto label{
+.contacto img {
+    width: 100%;
+}
+
+.contacto form {
+    max-width: 600px;
+}
+
+.contacto label {
     margin-bottom: 0;
 }
 
-.contacto .btn{
+.contacto .btn {
     background-color: #3690a0;
     color: white;
     padding-bottom: 0;
     border: none;
 }
 
-.contacto .btn:hover, .contacto .btn:active, .contacto .btn:focus{
+.contacto .btn:hover,
+.contacto .btn:active,
+.contacto .btn:focus {
     background-color: #509ba8;
     border: none;
     outline: none;
@@ -23,20 +33,39 @@
 }
 
 
-.success-msg, .error-msg {
- color:white;
- border-radius: 5px;
+.success-msg,
+.error-msg {
+    color: white;
+    border-radius: 5px;
 }
 
 .success-msg {
-background-color: rgb(115 199 118);
+    background-color: rgb(115 199 118);
 }
 
 .error-msg {
     background-color: rgb(255 120 11 / 58%);
 }
 
-.error-email{
-    color:red;
-    font-size:0.8rem;
+.error-email {
+    color: red;
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (min-width: 450px) {
+    .contacto img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .contacto img {
+        width: 100%;
+    }
+
+    .contacto {
+        height: 85vh;
+    }
 }

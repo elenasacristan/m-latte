@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contacto.css";
+import contacto_img from "../../common/images/contact.png";
 
 const Contacto = () => {
   const [contact, setContact] = useState({
@@ -84,54 +85,65 @@ const Contacto = () => {
   let { nombre, email, descripcion } = contact;
 
   return (
-    <div className="contacto mx-auto px-4">
-      <h2 className="mt-4 mb-3 text-center">Contacto</h2>
-     {errorMessage.error || errorMessage.message ?
-     (errorMessage.error ? (
-        <p className="error-msg text-center pt-2">{errorMessage.error}</p>
-      ) : (
-        <p className="success-msg text-center pt-2">{errorMessage.message}</p>
-      )) : (null)}
-      
+    <div className="contacto mx-auto px-4 px-md-5">
+      <h2 className="title mt-4 mb-3 mb-lg-5 text-center">Contacto</h2>
+      <div className="row d-flex align-items-center">
+        <div className="col-lg-6 d-flex justify-content-center d-lg-block px-sm-5 px-lg-0 px-xl-4">
+          <img src={contacto_img}></img>
+        </div>
+        <div className="mt-5 mt-lg-0 col col-lg-5">
+          {errorMessage.error || errorMessage.message ? (
+            errorMessage.error ? (
+              <p className="error-msg text-center pt-2">{errorMessage.error}</p>
+            ) : (
+              <p className="success-msg text-center pt-2">
+                {errorMessage.message}
+              </p>
+            )
+          ) : null}
 
-      <form onSubmit={handleSubmit} noValidate>
-        <div className="form-group">
-          <label htmlFor="nombre">Nombre:</label>
-          <input
-            onChange={handleChange}
-            type="text"
-            className="form-control"
-            id="nombre"
-            value={nombre}
-            name="nombre"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            onChange={handleChange}
-            type="email"
-            className="form-control"
-            id="email"
-            value={email}
-            name="email"
-          />
-          {errorMessage.error_email && <p className="error-email mt-1">{errorMessage.error_email}</p>}
-        </div>
+          <form className="mx-auto" onSubmit={handleSubmit} noValidate>
+            <div className="form-group">
+              <label htmlFor="nombre">Nombre:</label>
+              <input
+                onChange={handleChange}
+                type="text"
+                className="form-control"
+                id="nombre"
+                value={nombre}
+                name="nombre"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                onChange={handleChange}
+                type="email"
+                className="form-control"
+                id="email"
+                value={email}
+                name="email"
+              />
+              {errorMessage.error_email && (
+                <p className="error-email mt-1">{errorMessage.error_email}</p>
+              )}
+            </div>
 
-        <div className="form-group">
-          <label htmlFor="descripcion">En que podemos ayudarte?</label>
-          <textarea
-            onChange={handleChange}
-            className="form-control"
-            id="descripcion"
-            rows="3"
-            value={descripcion}
-            name="descripcion"
-          ></textarea>
+            <div className="form-group">
+              <label htmlFor="descripcion">En que podemos ayudarte?</label>
+              <textarea
+                onChange={handleChange}
+                className="form-control"
+                id="descripcion"
+                rows="3"
+                value={descripcion}
+                name="descripcion"
+              ></textarea>
+            </div>
+            <input className="mt-2 btn w-100" type="submit" value="Enviar" />
+          </form>
         </div>
-        <input className="mt-2 btn w-100" type="submit" value="Enviar" />
-      </form>
+      </div>
     </div>
   );
 };

@@ -9,12 +9,13 @@
     font-size: 0.7rem;
     font-weight: bolder;
 }
+
 .footer p {
     font-size: 0.7rem;
 }
 
 .footer .fa {
-    color:white;
+    color: white;
     font-size: 1.3rem;
     transition: all .5s ease;
 }
@@ -28,9 +29,20 @@
     .footer h6 {
         font-size: 0.8rem;
     }
+
     .footer p {
         font-size: 0.8rem;
     }
-      
-
 }
+/* 
+@media screen and (min-width: 991px) {
+    .footer {
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        height: 15vh;
+    }
+} */

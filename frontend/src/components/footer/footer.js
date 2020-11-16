@@ -12,7 +12,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="footer p-4">
+    <div className="footer p-3">
       <div className="container">
         <div className="row">
           <div className="col-sm-6 text-center text-sm-left pb-2 pb-md-0">
