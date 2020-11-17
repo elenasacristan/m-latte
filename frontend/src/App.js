@@ -12,6 +12,7 @@ import About from "./components/about/about";
 import Footer from "./components/footer/footer";
 import Colabora from "./components/colabora/colabora";
 import Contacto from "./components/contacto/contacto";
+import NotFound from "./components/notfound/notfound";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
           <Route exact path="/fotos" component={Fotos} />
           <Route exact path="/videos" component={Videos} />    
           <Route exact path="/colabora" component={Colabora} />    
-          <Route exact path="/contacto" component={Contacto} />    
+          <Route exact path="/contacto" component={Contacto} />  
+          <Route component={NotFound} />  
         </Switch>
         <Footer/>
       </Router>
