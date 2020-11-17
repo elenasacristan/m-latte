@@ -1,7 +1,7 @@
 .timeline-item h2 {
     position: relative;
     font-size: 2.3rem;
-    top: -30px;
+    top: -50px;
     text-align: center;
     width: 100%;
     font-weight: bolder;
@@ -9,6 +9,13 @@
     text-shadow: 1px 1px 5px #000000;
 }
 
+.timeline-item h4{
+    position: relative;
+    font-size:1.5rem;
+    top: -50px;
+    text-align: center;
+    width: 100%;
+}
 .timeline-item h3 {
     font-size: 0.9rem;
     font-weight: bold;
@@ -157,12 +164,15 @@ screen and (max-width:767px) {
 
     .timeline-item h2 {
         font-size: 2rem;
-        top: -25px;
+        top: -45px;
     }
 
-    .timeline-item h3 {
-        /* margin-top: -25px; */
-    }
+    .timeline-item h4{
+        font-size:1.3rem;
+        top: -45px;
+       }
+
+   
 
     /* Make sure all circles are at the same spot */
     .timeline-left::after,

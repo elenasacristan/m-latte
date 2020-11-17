@@ -40,7 +40,7 @@ const Inicio = () => {
           </div>
         </div>
         <div className="inicio-proposito container">
-          <div className="row pt-5 pb-0 d-flex justify-content-center">
+          <div className="row pt-5 pb-4 d-flex justify-content-center">
             {queQueremos.map((item) => (
               <About_card key={item.id} item={item} />
             ))}

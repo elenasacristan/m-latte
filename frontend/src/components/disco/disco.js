@@ -6,8 +6,9 @@ const Disco = ({ side, disco }) => {
     <div className={`timeline-item timeline-${side}`}>
       <div className="timeline-content text-center">
         <div className="row">
+          <h2>{disco.year}</h2>
+          <h4 className="pb-0">{disco.lugar}</h4>
           <div className="col-lg-5 container-year-img text-center">
-            <h2>{disco.year}</h2>
             <img className="mb-3 mx-lg-2" src={disco.imagen_disco} />
           </div>
           <div className="col-lg-7 mt-2 mt-lg-4">
@@ -15,7 +16,7 @@ const Disco = ({ side, disco }) => {
             <h5>{disco.autor}</h5>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="row">
           <div className="col">
             <p className="ml-lg-2 ">{disco.descripcion}</p>

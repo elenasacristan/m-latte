@@ -15,6 +15,7 @@ class SobreMi(models.Model):
 
 class Disco(models.Model):
     year = models.CharField(max_length=100, null=True, blank=True)
+    lugar = models.CharField(max_length=100, null=True, blank=True)
     titulo = models.CharField(max_length=100, null=True, blank=True)
     autor = models.CharField(max_length=100, null=True, blank=True)    
     imagen_disco = models.ImageField(upload_to="images", null=True, blank=True)
