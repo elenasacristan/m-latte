@@ -9,21 +9,27 @@
     text-shadow: 1px 1px 5px #000000;
 }
 
-.timeline-item h4{
-    position: relative;
-    font-size:1.5rem;
-    top: -50px;
-    text-align: center;
-    width: 100%;
-}
 .timeline-item h3 {
     font-size: 0.9rem;
     font-weight: bold;
     padding-bottom: 10px;
 }
 
+.timeline-item h4{
+    position: relative;
+    font-size:1.5rem;
+    top: -50px;
+    text-align: center;
+    width: 100%;
+    color:#4f9ba6;
+}
+
 .timeline-item h5 {
     font-size: 0.6rem;
+}
+
+.disco-details{
+    margin-top: -10px;
 }
 
 .timeline-item img {
@@ -123,10 +129,6 @@
     margin-bottom: 50px;
 }
 
-.container-year-img {
-    margin-top: -18px;
-}
-
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (min-width: 400px) {
     .timeline-item h3 {
@@ -154,7 +156,6 @@ screen and (max-width:767px) {
         padding-right: 25px;
     }
 
-
     /* Make sure that all arrows are pointing leftwards */
     .timeline-item::before {
         left: 60px;
@@ -170,9 +171,7 @@ screen and (max-width:767px) {
     .timeline-item h4{
         font-size:1.3rem;
         top: -45px;
-       }
-
-   
+    }
 
     /* Make sure all circles are at the same spot */
     .timeline-left::after,

@@ -6,15 +6,18 @@
 
 .discografia h4 {
     font-family: 'Caveat', cursive;
-    color: #4a94a0;
     font-size: 2.2rem;
     font-weight: bolder;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+}
+
+.title-discografia{
+    color:#c84e56;
 }
 
 .timeline {
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 
@@ -25,11 +28,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .discografia h4 {
+    /* .discografia h4 {
         padding-bottom: 0px;
-    }
+    } */
     .discografia {
-        padding-top: 0px;
+        /* padding-top: 0px; */
         transform: skew(0deg, 0deg) translateY(-20px);
     }
 }

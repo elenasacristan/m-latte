@@ -1,8 +1,14 @@
-.disco-container {
-    position: relative;
-}
+/* .timeline-content h4{
+    color:#3690a0;
+} */
 
-.disco-container {
+
+/* .disco-container {
+    position: relative;
+} */
+
+
+/* .disco-container {
     border-radius: 11px;
     height: 200px;
     width: 200px;
@@ -10,25 +16,30 @@
     background-size: cover;
     background-position: center;
     background-image: url('../../common/images/Pedagogicos.png');
-}
+} */
 
-
+/* 
 .disco-container h2 {
     font-size: 1.3rem;
     color: white;
     text-shadow: 1px 1px 5px black;
     font-family: 'Palanquin Dark', sans-serif;
     margin-bottom: 80px;
-}
+} */
 
-.disco-container h3 {
+/* .disco-container h3 {
     width: 100%;
     background-color: black;
     color: white;
     font-size: 0.8rem;
-}
+} */
 
-.discografia button {
+/* .disco-container h4{
+    color:#3690a0;
+
+} */
+
+/* .discografia button {
     text-align: center;
     font-family: 'Palanquin Dark', sans-serif;
     background-color: white;
@@ -47,9 +58,9 @@
     outline: none;
     box-shadow: none;
 
-}
+} */
 
-
+/* 
 @media only screen and (min-width: 351px) {
     .disco-container {
         height: 260px;
@@ -71,10 +82,10 @@
         font-size: 1.5rem;
     }
 
-}
+} */
 
 
-@media only screen and (min-width: 991px) {
+/* @media only screen and (min-width: 991px) {
     .disco-container {
         height: 300px;
         width: 300px;
@@ -93,4 +104,4 @@
         width: 300px;
     }
 
-}
+} */
