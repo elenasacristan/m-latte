@@ -9,11 +9,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     margin: 0;
     padding: 0;
-    /* font-family: 'Montaga', serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
 }
 
 .title {
@@ -28,16 +28,9 @@ h6 {
     font-size: 1.9rem;
 }
 
-body {
-    /* background-image:url('./common/images/bkg.png'); */
-    /* background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20% 50%;
-}
 
 @media only screen and (min-width: 576px) {
-    h2 {
+    .title {
         font-size: 3rem;
     }
 }
