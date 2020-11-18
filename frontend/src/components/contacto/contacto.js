@@ -86,7 +86,7 @@ const Contacto = () => {
 
   return (
     <div className="contacto mx-auto px-4 px-md-5">
-      <h2 className="title mt-4 mb-3 mb-lg-5 text-center">Contacto</h2>
+      <h2 className="main-title title mt-4 mb-3 mb-lg-5 text-center">Contacto</h2>
       <div className="row d-flex align-items-center">
         <div className="col-lg-6 d-flex justify-content-center d-lg-block px-sm-5 px-lg-0 px-xl-4">
           <img src={contacto_img}></img>

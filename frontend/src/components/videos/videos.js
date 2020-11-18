@@ -15,7 +15,7 @@ const Videos = () => {
 
   return (
       <div className="videos container px-2 pb-5">
-        <h2 className="title text-center text-lg-left mt-4 mb-5">
+        <h2 className="main-title title text-center text-lg-left mt-4 mb-5">
           Videos
         </h2>
 

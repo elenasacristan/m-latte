@@ -18,7 +18,7 @@ const Colabora = () => {
     return (
       <div className="colabora mx-auto px-4 px-md-5">
         <div className="mx-auto text-center">
-          <h2 className="title mt-4 mb-5">{colabora.titulo}</h2>
+          <h2 className="main-title title mt-4 mb-5">{colabora.titulo}</h2>
           <div class="row d-flex align-items-center">
             <div class="col-lg-5 d-flex justify-content-center d-lg-block">
               <img src={colaborate}></img>

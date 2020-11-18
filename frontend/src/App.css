@@ -16,6 +16,11 @@ a {
     font-family: 'Palanquin Dark', sans-serif;
 }
 
+.main-title{
+    font-family: 'Molle', cursive;
+
+}
+
 .title {
     color: #797979;
     font-weight: bolder;
