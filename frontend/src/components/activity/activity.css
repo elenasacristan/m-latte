@@ -16,7 +16,6 @@
     font-size: 1rem;
     color: white;
     text-shadow: 1px 1px 5px black;
-    font-family: 'Palanquin Dark', sans-serif;
 }
 
 .acivity-container a {
@@ -27,7 +26,7 @@
     right: 0;
     margin: auto;
     width: 70%;
-    font-family: 'Palanquin Dark', sans-serif;
+    /* font-family: 'Palanquin Dark', sans-serif; */
     background-color: #2994A4;
     font-size: 1.2rem;
     border-radius: 3px;
@@ -43,7 +42,6 @@
     border: none;
     outline: none;
     box-shadow: none;
-
 }
 
 
