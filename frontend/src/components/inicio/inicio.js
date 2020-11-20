@@ -35,7 +35,7 @@ const Inicio = () => {
           <div className="container-sentence d-flex">
             <h3 className="text-center">
               {inicio.frase}
-              <br />({inicio.author})
+              <br />{inicio.author}
             </h3>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Inicio = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-lg-4 mb-5 mb-lg-0 text-center">
-                <h1>Lo que hacemos</h1>
+                <h1>{inicio.title2}</h1>
               </div>
               {queHacemos.map((item) => (
               <Hacemos_item key={item.id} item={item} />

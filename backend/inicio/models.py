@@ -4,9 +4,10 @@ class Inicio(models.Model):
     frase =  models.CharField(max_length=400, null=True, blank=True)
     author =  models.CharField(max_length=100, null=True, blank=True)
     imagen_inicio = models.ImageField(upload_to="images", null=True, blank=True)
+    title2 =  models.CharField(max_length=400, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "imagen+frase"
+        verbose_name_plural = "Inicio-info"
    
     def __str__(self):
         return self.frase
