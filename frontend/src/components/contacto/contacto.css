@@ -36,6 +36,7 @@
 .error-msg {
     color: white;
     border-radius: 5px;
+    max-width: 600px;
 }
 
 .success-msg {

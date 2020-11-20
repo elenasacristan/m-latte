@@ -1,25 +1,39 @@
 import React, { useState, useEffect } from "react";
 import "./detail.css";
 import CardDetail from "../card_detail/card_detail";
+import NotFound from "../notfound/notfound";
 
 const Detail = ({ match }) => {
   const [actividad, setActividad] = useState({});
+  const [notfound, setNotfound] = useState(false);
 
   useEffect(() => {
     fetch(
       `http://127.0.0.1:8000/api/actividades/Actividades/${match.params.actividadId}/`
     )
-      .then((res) => res.json())
-      .then((data) => setActividad(data));
+      .then((res) => {
+        if (res.ok) {
+          setNotfound(false);
+          return res.json();
+        } 
+        setNotfound(true);
+        throw new Error('Something went wrong');
+      })
+      .then((data) => setActividad(data))
+      .catch(err => console.log(err));
   }, []);
 
-  if (Object.keys(actividad).length < 1) {
+  if (notfound) {
+    return <NotFound />;
+  } else if (Object.keys(actividad).length < 1) {
     return "loading";
   } else {
     return (
       <div className="detail">
         <div className="mx-auto container">
-          <h3 className="subtitle text-lg-left mt-4 mb-5">{actividad.titulo}</h3>
+          <h3 className="subtitle text-lg-left mt-4 mb-5">
+            {actividad.titulo}
+          </h3>
 
           <div className="row">
             <div className="col-12 col-md-6 col-lg-5 col-xl-4">

@@ -94,7 +94,7 @@ const Contacto = () => {
         <div className="mt-5 mt-lg-0 col col-lg-5">
           {errorMessage.error || errorMessage.message ? (
             errorMessage.error ? (
-              <p className="error-msg text-center pt-2">{errorMessage.error}</p>
+              <p className="mx-auto error-msg text-center pt-2 px-1">{errorMessage.error}</p>
             ) : (
               <p className="success-msg text-center pt-2">
                 {errorMessage.message}
