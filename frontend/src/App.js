@@ -13,6 +13,7 @@ import Footer from "./components/footer/footer";
 import Colabora from "./components/colabora/colabora";
 import Contacto from "./components/contacto/contacto";
 import NotFound from "./components/notfound/notfound";
+import Inicio from "./components/inicio/inicio";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <NavBar />
         <Switch>
           <Route exact path="/" component={Main} />
+          <Route exact path="/Inicio" component={Main} />
           <Route exact path="/SobreMi" component={About} />
           <Route exact path="/actividades/:tipo" component={Activities} />
           <Route exact path="/actividades/:tipo/:actividadId" component={Detail} />

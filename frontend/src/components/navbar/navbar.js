@@ -43,7 +43,7 @@ const NavBar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link onClick={closeDropDown} className="nav-link" to="/">
+              <Link onClick={closeDropDown} className="nav-link" to="/Inicio">
                 Inicio
               </Link>
             </li>
