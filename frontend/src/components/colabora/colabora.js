@@ -16,7 +16,7 @@ const Colabora = () => {
     return "loading";
   } else {
     return (
-      <div className="colabora mx-auto px-4 px-md-5">
+      <div className="colabora mx-auto px-4 px-md-5 pb-5">
         <div className="mx-auto text-center">
           <h2 className="main-title title mt-4 mb-5">{colabora.titulo}</h2>
           <div class="row d-flex align-items-center">

@@ -9,11 +9,10 @@
 
 .about-marta h4 {
     position: absolute;
-    top: 57px;
+    top: 49px;
     left: 30px;
-    font-family: 'Caveat', cursive;
     color: #3690a0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bolder;
 }
 
@@ -47,11 +46,11 @@ html {
 @media screen and (min-width: 400px) {
   
     .about-marta h4 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .about-marta h4 {
-        top: 51px;
+        top: 48px;
     }
 
 }
@@ -62,11 +61,12 @@ html {
 
     .about .title {
         font-size: 3rem;
+        color: #adb6b8;
     }
 
     .about-marta h4 {
-        font-size: 2.1rem;
-        top: 92px;
+        font-size: 2rem;
+        top: 88px;
         left: 45px;
     }
 

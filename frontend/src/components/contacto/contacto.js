@@ -85,7 +85,7 @@ const Contacto = () => {
   let { nombre, email, descripcion } = contact;
 
   return (
-    <div className="contacto mx-auto px-4 px-md-5">
+    <div className="contacto mx-auto px-4 px-md-5 pb-5">
       <h2 className="main-title title mt-4 mb-3 mb-lg-5 text-center">Contacto</h2>
       <div className="row d-flex align-items-center">
         <div className="col-lg-6 d-flex justify-content-center d-lg-block px-sm-5 px-lg-0 px-xl-4">

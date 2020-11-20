@@ -17,8 +17,8 @@ const Fotos = () => {
     return "loading";
   } else {
     return (
-      <div className="fotos container px-2">
-        <h2 className="main-title title text-center text-lg-left mt-4 mb-5">
+      <div className="fotos container px-2 pb-5">
+        <h2 className="main-title title text-center text-lg-left mt-4  mb-5">
           Fotos
         </h2>
 

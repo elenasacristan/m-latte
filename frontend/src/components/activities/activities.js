@@ -15,7 +15,7 @@ const Activities = ({ match }) => {
     return "loading";
   } else {
     return (
-      <div className="activities container px-4">
+      <div className="activities container px-4 pb-5">
         <h2 className="main-title title text-center text-lg-left mt-4 mb-5">
           {match.params.tipo}
         </h2>

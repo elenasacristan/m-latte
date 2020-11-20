@@ -1,6 +1,5 @@
 .contacto {
     padding-top: 12vh;
-    padding-bottom: 12vh;
     background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
 }
 
@@ -66,6 +65,6 @@
     }
 
     .contacto {
-        height: 85vh;
+        min-height: 85vh;
     }
 }

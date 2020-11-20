@@ -1,7 +1,6 @@
 .colabora {
-    height: 100%;
+    min-height: 85vh;
     padding-top: 12vh;
-    padding-bottom: 12vh;
     background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
 }
 
@@ -31,10 +30,6 @@
 }
 
 @media screen and (min-width: 991px) {
-    .colabora {
-        height: 85vh;
-    }
-
     .colabora img {
         width: 100%;
     }
