@@ -37,7 +37,7 @@ const Detail = ({ match }) => {
 
           <div className="row">
             <div className="col-12 col-md-6 col-lg-5 col-xl-4">
-              <img className="w-100 mb-5" src={actividad.foto} />
+              <img className="w-100 mb-5" src={`https://res.cloudinary.com/dm3k4mri1/${actividad.foto}`}/>
             </div>
             <div className="col-12 col-md-6 col-lg-7 col-xl-8 pl-lg-5">
               {actividad.descripcion.split("\\").map((parrafo, index) => (

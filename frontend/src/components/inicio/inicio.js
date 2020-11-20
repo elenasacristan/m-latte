@@ -31,7 +31,7 @@ const Inicio = () => {
   } else {
     return (
       <div className="inicio">
-        <div className="inicio-banner" style={{ backgroundImage:`url(${inicio.imagen_inicio})` }}>
+        <div className="inicio-banner" style={{ backgroundImage:`url(https://res.cloudinary.com/dm3k4mri1/${inicio.imagen_inicio})` }}>
           <div className="container-sentence d-flex">
             <h3 className="text-center">
               {inicio.frase}

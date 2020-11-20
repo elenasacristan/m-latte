@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 class TipoActividad(models.Model):
     nombre =  models.CharField(max_length=20, null=True, blank=True)
@@ -12,7 +13,7 @@ class TipoActividad(models.Model):
 
 class Actividad(models.Model):
     tipo_actividad = models.ForeignKey(TipoActividad, related_name='actividades', on_delete=models.CASCADE)
-    foto = models.ImageField(upload_to="images", null=True, blank=True)
+    foto = CloudinaryField('foto', null=True, blank=True)
     titulo =  models.CharField(max_length=100, null=True, blank=True)
     text_boton = models.CharField(max_length=30, null=True, blank=True)
     descripcion = models.TextField(null=True, blank=True)

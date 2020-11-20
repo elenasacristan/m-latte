@@ -7,5 +7,5 @@ class VideoViewSet(viewsets.ModelViewSet):
     serializer_class = VideoSerializer
 
 class FotoViewSet(viewsets.ModelViewSet):
-    queryset = Foto.objects.all()
+    queryset = Foto.objects.all().order_by('year')
     serializer_class = FotoSerializer

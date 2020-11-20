@@ -7,5 +7,5 @@ class SobreMiViewSet(viewsets.ModelViewSet):
     serializer_class = SobreMiSerializer
 
 class DiscoViewSet(viewsets.ModelViewSet):
-    queryset = Disco.objects.all()
+    queryset = Disco.objects.all().order_by('-year')
     serializer_class = DiscoSerializer

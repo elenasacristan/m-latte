@@ -1,9 +1,10 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 class Inicio(models.Model):
     frase =  models.CharField(max_length=400, null=True, blank=True)
     author =  models.CharField(max_length=100, null=True, blank=True)
-    imagen_inicio = models.ImageField(upload_to="images", null=True, blank=True)
+    imagen_inicio = CloudinaryField('imagen_inicio', null=True, blank=True)
     title2 =  models.CharField(max_length=400, null=True, blank=True)
 
     class Meta:

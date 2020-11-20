@@ -2,6 +2,8 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 
 class Foto(models.Model):
+    year = models.IntegerField(null=True, blank=True)
+    lugar = models.CharField(max_length=120, null=True, blank=True)
     titulo =  models.CharField(max_length=120, null=True, blank=True)
     foto = CloudinaryField('foto', null=True, blank=True)
 
