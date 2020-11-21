@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./detail.css";
 import CardDetail from "../card_detail/card_detail";
 import NotFound from "../notfound/notfound";
+import Spinner from "../Spinner/Spinner";
 
 const Detail = ({ match }) => {
   const [actividad, setActividad] = useState({});
@@ -26,7 +27,7 @@ const Detail = ({ match }) => {
   if (notfound) {
     return <NotFound />;
   } else if (Object.keys(actividad).length < 1) {
-    return "loading";
+    return <Spinner/>;
   } else {
     return (
       <div className="detail">

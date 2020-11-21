@@ -5,3 +5,12 @@ background-color: rgb(246, 246, 246);}
     padding-top: 90px;
 }
 
+.detail .subtitle{
+font-size: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .detail .subtitle{
+        font-size: 2.7rem;
+    }
+}
