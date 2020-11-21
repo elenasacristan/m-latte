@@ -2,6 +2,10 @@
     padding-top: 75px;
 }
 
+.inicio-proposito.container{
+    width: 90%;
+}
+
 .inicio-banner {
     position: relative;
     height: 25vh;
@@ -51,6 +55,9 @@
 
 
 @media only screen and (min-width: 576px) {
+    .inicio-proposito.container{
+        width: 100%;
+    }
     .inicio-hacemos-container {
         clip-path: polygon(0% 80%, 100% 100%, 100% 0%, 0 15%);
     }

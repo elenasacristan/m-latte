@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.acivity-container img{
+.acivity-container img {
     border-radius: 11px;
 }
 
@@ -11,7 +11,7 @@
     text-align: center;
     left: 0;
     right: 0;
-    top:0;
+    top: 0;
     width: 75%;
     font-size: 1rem;
     color: white;
@@ -22,14 +22,13 @@
 .acivity-container a {
     position: absolute;
     text-align: center;
-    bottom:10px;
+    border-radius: 10px;
+    bottom: 10px;
     left: 0;
     right: 0;
     margin: auto;
     width: 70%;
-    background-color: #2994A4;
     font-size: 1.2rem;
-    border-radius: 3px;
     border: none;
     color: white;
 }
@@ -48,35 +47,35 @@
 @media only screen and (min-width: 350px) {
     .acivity-container button {
         font-size: 1.5rem;
-     }
+    }
 }
 
 @media only screen and (min-width: 380px) {
     .acivity-container h2 {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (min-width: 576px) {
     .acivity-container h2 {
-       font-size: 1.8rem;
+        font-size: 1.8rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .acivity-container h2 {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .acivity-container h2 {
-       font-size: 1.3rem;
+        font-size: 1.3rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .acivity-container h2 {
-       font-size: 1.6rem;
+        font-size: 1.6rem;
     }
 }

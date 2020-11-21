@@ -18,28 +18,47 @@
 }
 
 .card-detail h4 {
+    font-size: 1.1rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
 .card-detail ul {
-    padding: 0px 25px 80px;
-    margin-left: 35px;
-    font-size: 1rem;
+    margin-left: 15px;
+    font-size: 0.8rem;
 }
 
 .card-detail-circle {
     position: absolute;
     bottom: -130px;
-    right: 20px;
+    right: 0px;
     background-color: #2994A4;
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     color: white;
 }
 
-.card-detail-circle h4{
+.card-detail-circle h4 {
     font-family: 'Caveat';
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .card-detail h4 {
+        font-size: 1.3rem;
+    }
+
+    .card-detail ul {
+        font-size: 1rem;
+        margin-left: 35px;
+    }
+
+    .card-detail-circle {
+        bottom: -100px;
+        right: 20px;
+        height: 180px;
+        width: 180px;
+    }
+    
 }

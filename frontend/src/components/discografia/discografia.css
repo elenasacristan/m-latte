@@ -6,9 +6,9 @@
 
 .discografia h4 {
     font-family: 'Caveat', cursive;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: bolder;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 .title-discografia{
@@ -17,7 +17,7 @@
 
 .timeline {
     position: relative;
-    /* margin: 0 auto; */
+    left:-20px;
 }
 
 
@@ -25,14 +25,20 @@
     .discografia h4 {
         font-size: 2.3rem;
     }
+    .timeline {
+        left:0px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .discografia h4 {
+        padding-bottom: 40px;
+
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    /* .discografia h4 {
-        padding-bottom: 0px;
-    } */
     .discografia {
-        /* padding-top: 0px; */
         transform: skew(0deg, 0deg) translateY(-20px);
     }
 }

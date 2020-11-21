@@ -25,7 +25,7 @@ const Discografia = () => {
   } else{
     return (
       <div className="discografia">
-        <h4 className="text-center my-5 title-discografia mt-lg-0 py-lg-0">{titleDiscografia}</h4>
+        <h4 className="text-center mb-5 title-discografia mt-lg-0 py-xl-0">{titleDiscografia}</h4>
         <div className="timeline m-auto">
           {discos.map((disco, index) =>
             index % 2 === 0 ? (

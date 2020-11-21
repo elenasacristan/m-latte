@@ -30,7 +30,7 @@ const Detail = ({ match }) => {
     return <Spinner/>;
   } else {
     return (
-      <div className="detail">
+      <div className="detail px-3">
         <div className="mx-auto container">
           <h3 className="subtitle text-lg-left mt-4 mb-5">
             {actividad.titulo}
@@ -47,7 +47,7 @@ const Detail = ({ match }) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 mt-5 mt-md-2">
+            <div className="col-12 mt-5 mt-md-0">
               <CardDetail actividad={actividad} />
             </div>
           </div>
