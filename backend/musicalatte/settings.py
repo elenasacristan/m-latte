@@ -50,14 +50,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'quienes_somos',
     'inicio',
     'sobre_mi',
     'actividades',
     'galeria',
     'contacto',
     'colabora',
-    'footer'
+    'footer',
 ]
 
 MIDDLEWARE = [
@@ -168,3 +167,4 @@ cloudinary.config(
   api_key = os.environ.get("API_KEY"), 
   api_secret = os.environ.get("API_SECRET") 
 )
+
