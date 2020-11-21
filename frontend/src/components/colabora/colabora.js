@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import colaborate from "../../common/images/colaborate.png";
 import "./colabora.css";
+import Spinner from "../Spinner/Spinner";
 
 const Colabora = () => {
   const [colabora, setColabora] = useState({});
@@ -13,7 +14,7 @@ const Colabora = () => {
   }, []);
 
   if (Object.keys(colabora).length < 1) {
-    return "loading";
+    return <Spinner />;
   } else {
     return (
       <div className="colabora mx-auto px-4 px-md-5 pb-5">

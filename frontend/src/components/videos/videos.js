@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./videos.css";
 import Video from "../video/video";
+import Spinner from "../Spinner/Spinner";
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);
@@ -13,7 +14,10 @@ const Videos = () => {
       });
   }, []);
 
-  return (
+  if (videos.length < 1) {
+    return <Spinner />;
+  } else {
+    return (
       <div className="videos container px-2 pb-5">
         <h2 className="main-title title text-center text-lg-left mt-4 mb-5">
           Videos
@@ -25,7 +29,8 @@ const Videos = () => {
           ))}
         </div>
       </div>
-  );
+    );
+  }
 };
 
 export default Videos;

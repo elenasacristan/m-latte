@@ -1,0 +1,11 @@
+.Spinner {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(241 242 243);
+}
+
+.Spinner img {
+    height: 15vh;
+    margin: auto;
+    color: red;
+}

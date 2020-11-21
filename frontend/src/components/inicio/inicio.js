@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./inicio.css";
 import About_card from "../about_card/about_card";
 import Hacemos_item from "../hacemos-item/Hacemos_item";
+import Spinner from "../Spinner/Spinner";
 
 const Inicio = () => {
   const [inicio, setInicio] = useState({});
@@ -26,8 +27,8 @@ const Inicio = () => {
       });
   }, []);
 
-  if (Object.keys(inicio) < 1 && queQueremos.length < 1 && setQueHacemos.length < 1) {
-    return "loading";
+  if (Object.keys(inicio) < 1 || queQueremos.length < 1 || setQueHacemos.length < 1) {
+    return <Spinner/>;
   } else {
     return (
       <div className="inicio">

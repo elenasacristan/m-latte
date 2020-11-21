@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./activities.css";
 import Activity from "../activity/activity";
+import Spinner from "../Spinner/Spinner";
 
 const Activities = ({ match }) => {
   const [tipoActividad, setTipoActividad] = useState([]);
@@ -12,7 +13,7 @@ const Activities = ({ match }) => {
   }, []);
 
   if (tipoActividad.length < 1) {
-    return "loading";
+    return <Spinner/>;
   } else {
     return (
       <div className="activities container px-4 pb-5">

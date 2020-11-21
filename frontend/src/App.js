@@ -13,13 +13,15 @@ import Footer from "./components/footer/footer";
 import Colabora from "./components/colabora/colabora";
 import Contacto from "./components/contacto/contacto";
 import NotFound from "./components/notfound/notfound";
-import Inicio from "./components/inicio/inicio";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <Router>
       <NavBar />
+      <ScrollToTop />
+
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/Inicio" component={Main} />

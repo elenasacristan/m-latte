@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./about.css";
 import Discografia from "../discografia/discografia";
+import Spinner from "../Spinner/Spinner";
 
 const About = () => {
   const [aboutMe, setAboutMe] = useState({});
@@ -15,7 +16,7 @@ const About = () => {
   }, []);
 
   if (Object.keys(aboutMe) < 1) {
-    return "loading";
+    return <Spinner/>;
   } else {
     return (
       <div className="about mt-5 mx-auto container" id="about">
