@@ -8,7 +8,7 @@ class Contacto(models.Model):
     fecha = models.DateTimeField(default=datetime.now)
 
     class Meta:
-        verbose_name_plural = "Emails"
+        verbose_name_plural = "6. VER EMAILS"
 
     def __str__(self):
         return self.email

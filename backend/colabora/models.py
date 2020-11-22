@@ -9,8 +9,8 @@ class Colabora(models.Model):
     texto3 = models.TextField(null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "Colabora"
+        verbose_name_plural = "5. COLABORA"
    
     def __str__(self):
-        return self.titulo
+        return f'{self.titulo.upper()} - click para modificar'
 

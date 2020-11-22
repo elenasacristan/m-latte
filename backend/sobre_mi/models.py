@@ -10,10 +10,10 @@ class SobreMi(models.Model):
     titulo3 =  models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "sobre_mi"
+        verbose_name_plural = "2. SOBRE MI"
    
     def __str__(self):
-        return self.titulo1
+        return f'{self.titulo1.upper()} - click para modificar'
 
 class Disco(models.Model):
     year = models.IntegerField(null=True, blank=True)
@@ -23,5 +23,8 @@ class Disco(models.Model):
     imagen_disco = CloudinaryField('imagen_disco', null=True, blank=True)
     descripcion = models.TextField(null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = "2.1 DISCOS"
+
     def __str__(self):
-        return self.titulo
+        return f'{self.titulo.upper()} - click para modificar'

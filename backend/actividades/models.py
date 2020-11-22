@@ -5,10 +5,10 @@ class TipoActividad(models.Model):
     nombre =  models.CharField(max_length=20, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "tipo_actividad"
+        verbose_name_plural = "3. TIPO DE ACTIVIDAD"
 
     def __str__(self):
-        return self.nombre
+        return f'{self.nombre.upper()} - click para modificar'
 
 
 class Actividad(models.Model):
@@ -24,8 +24,8 @@ class Actividad(models.Model):
     autor = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "actividades"
+        verbose_name_plural = "3.1 ACTIVIDADES"
 
     def __str__(self):
-        return "{} - {}".format(self.titulo, self.tipo_actividad.nombre)
+        return f'{self.titulo.upper()} / ({self.tipo_actividad.nombre}) - click para modificar'
 

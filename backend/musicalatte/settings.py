@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'admin_reorder',
     'inicio',
     'sobre_mi',
     'actividades',
@@ -69,6 +70,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'admin_reorder.middleware.ModelAdminReorder',
 ]
 
 ROOT_URLCONF = 'musicalatte.urls'
@@ -129,7 +131,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
 TIME_ZONE = 'UTC'
 
@@ -168,3 +170,16 @@ cloudinary.config(
   api_secret = os.environ.get("API_SECRET") 
 )
 
+
+ADMIN_REORDER = (
+    # Keep original label and models
+    'auth',
+    'users',
+    'inicio',
+    'sobre_mi',
+    'actividades',
+    'galeria',
+    'colabora',
+    'contacto',
+    'footer'
+)

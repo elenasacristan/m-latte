@@ -16,7 +16,7 @@ class Footer(models.Model):
     link4 = models.URLField(max_length=200, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "footer"
+        verbose_name_plural = "7. PIE DE PAGINA"
    
     def __str__(self):
-        return self.titulo
+        return 'Haz click aquí para editar el pié de página'
