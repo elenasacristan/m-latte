@@ -35,6 +35,12 @@ a {
 }
 
 
+[data-aos^=flip][data-aos^=flip].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+    z-index: 1;
+}
+
 @media only screen and (min-width: 576px) {
     .title {
         font-size: 3rem;

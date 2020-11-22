@@ -1,9 +1,11 @@
 import React from "react";
 import "./disco.css";
 
+
 const Disco = ({ side, disco }) => {
+
   return (
-    <div className={`timeline-item timeline-${side}`}>
+    <div className={`timeline-item timeline-${side}`} data-aos="fade-up">
       <div className="timeline-content text-center">
         <h2>{disco.year}</h2>
         <h4 className="pb-0">{disco.lugar}</h4>

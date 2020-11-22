@@ -24,6 +24,10 @@
     color: #acacac;
 }
 
+.placeholder-footer{
+    background-color: #383838;
+    height: 20vh;
+}
 
 @media screen and (min-width: 400px) {
     .footer h6 {
@@ -34,15 +38,3 @@
         font-size: 0.8rem;
     }
 }
-/* 
-@media screen and (min-width: 991px) {
-    .footer {
-        height: 20vh;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .footer {
-        height: 15vh;
-    }
-} */

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./activities.css";
 import Activity from "../activity/activity";
 import Spinner from "../Spinner/Spinner";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Activities = ({ match }) => {
   const [tipoActividad, setTipoActividad] = useState([]);
@@ -10,6 +12,7 @@ const Activities = ({ match }) => {
     fetch("http://127.0.0.1:8000/api/actividades/tipoActividad/")
       .then((res) => res.json())
       .then((data) => setTipoActividad(data));
+      Aos.init({ duration: 1500 });
   }, []);
 
   if (tipoActividad.length < 1) {

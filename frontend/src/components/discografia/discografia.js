@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./discografia.css";
 import Disco from "../disco/disco";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Discografia = () => {
   const [discos, setDiscos] = useState([]);
@@ -17,11 +19,12 @@ const Discografia = () => {
       .then((data) => {
         setTitleDiscografia(data[0].titulo3);
       });
+      Aos.init({ duration: 1000 });
   }, []);
 
 
   if (!titleDiscografia && discos.length < 1) {
-    return "loading";
+    return "";
   } else{
     return (
       <div className="discografia">

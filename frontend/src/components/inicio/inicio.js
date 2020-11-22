@@ -3,6 +3,8 @@ import "./inicio.css";
 import About_card from "../about_card/about_card";
 import Hacemos_item from "../hacemos-item/Hacemos_item";
 import Spinner from "../Spinner/Spinner";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Inicio = () => {
   const [inicio, setInicio] = useState({});
@@ -25,6 +27,7 @@ const Inicio = () => {
       .then((data) => {
         setQueHacemos(data);
       });
+      Aos.init({ duration: 2000 });
   }, []);
 
   if (Object.keys(inicio) < 1 || queQueremos.length < 1 || setQueHacemos.length < 1) {
@@ -48,7 +51,7 @@ const Inicio = () => {
           </div>
         </div>
 
-        <div className="inicio-hacemos-container d-flex">
+        <div className="inicio-hacemos-container d-flex" data-aos="fade-up">
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-lg-4 mb-5 mb-lg-0 text-center">

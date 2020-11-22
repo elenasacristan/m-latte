@@ -14,7 +14,7 @@ const Footer = () => {
   if (
     Object.keys(footer) < 1 
   ) {
-    return "loading";
+    return <div className="placeholder-footer"></div>;
   } else {
     return (
       <div className="footer p-3">
