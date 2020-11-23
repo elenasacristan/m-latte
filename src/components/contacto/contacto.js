@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./contacto.css";
 import contacto_img from "../../common/images/contact.png";
 import DjangoCSRFToken from "../DjangoCSRFToken";
-import {csrftoken} from './djangotoken'
+import {csrftoken} from '../djangotoken';
 
 const Contacto = () => {
   const [contact, setContact] = useState({
