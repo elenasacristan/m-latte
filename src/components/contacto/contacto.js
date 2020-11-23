@@ -58,7 +58,7 @@ const Contacto = () => {
     });
 
     //post data
-    fetch("http://127.0.0.1:8000/api/contacto/Contacto/", {
+    fetch("/api/contacto/Contacto/", {
       method: "POST",
       body: JSON.stringify(contact),
       headers: {
@@ -97,11 +97,11 @@ const Contacto = () => {
         <div className="mt-5 mt-lg-0 col col-lg-5">
           {errorMessage.error || errorMessage.message ? (
             errorMessage.error ? (
-              <p className="mx-auto error-msg text-center pt-2 px-1">
+              <p className="mx-auto error-msg text-center pt-2 mx-auto">
                 {errorMessage.error}
               </p>
             ) : (
-              <p className="success-msg text-center pt-2">
+              <p className="success-msg text-center pt-2 mx-auto">
                 {errorMessage.message}
               </p>
             )
