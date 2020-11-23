@@ -9,12 +9,12 @@ const Discografia = () => {
   const [titleDiscografia, setTitleDiscografia] = useState('');
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/sobremi/disco/")
+    fetch("/api/sobremi/disco/")
       .then((res) => res.json())
       .then((data) => {
         setDiscos(data);
       });
-      fetch("http://localhost:8000/api/sobremi/sobremi/")
+      fetch("/api/sobremi/sobremi/")
       .then((res) => res.json())
       .then((data) => {
         setTitleDiscografia(data[0].titulo3);

@@ -8,7 +8,7 @@ const Colabora = () => {
   const [colabora, setColabora] = useState({});
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/colabora/Colabora/")
+    fetch("/api/colabora/Colabora/")
       .then((res) => res.json())
       .then((data) => setColabora(data[0]));
   }, []);

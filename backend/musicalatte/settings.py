@@ -162,7 +162,10 @@ REST_FRAMEWORK = {
     ]
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000"
+]
 
 cloudinary.config( 
   cloud_name = os.environ.get("CLOUD_NAME"), 

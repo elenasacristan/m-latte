@@ -10,7 +10,7 @@ const Detail = ({ match }) => {
 
   useEffect(() => {
     fetch(
-      `http://127.0.0.1:8000/api/actividades/Actividades/${match.params.actividadId}/`
+      `/api/actividades/Actividades/${match.params.actividadId}/`
     )
       .then((res) => {
         if (res.ok) {

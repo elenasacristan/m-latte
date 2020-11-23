@@ -5,7 +5,7 @@ const Footer = () => {
   const [footer, setFooter] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/footer/footer/")
+    fetch("/api/footer/footer/")
       .then((res) => res.json())
       .then((data) => setFooter(data[0]))
       .catch(err => console.log(err));

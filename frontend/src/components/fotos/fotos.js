@@ -7,7 +7,7 @@ const Fotos = () => {
   const [fotos, setFotos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/galeria/Foto/")
+    fetch("/api/galeria/Foto/")
       .then((res) => res.json())
       .then((data) => {
         setFotos(data);

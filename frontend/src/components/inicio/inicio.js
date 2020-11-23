@@ -12,17 +12,17 @@ const Inicio = () => {
   const [queQueremos, setQueQueremos] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/inicio/inicio/")
+    fetch("/api/inicio/inicio/")
       .then((res) => res.json())
       .then((data) => {
         setInicio(data[0]);
       });
-    fetch("http://localhost:8000/api/inicio/queQueremos/")
+    fetch("/api/inicio/queQueremos/")
       .then((res) => res.json())
       .then((data) => {
         setQueQueremos(data);
       });
-    fetch("http://localhost:8000/api/inicio/queHacemos/")
+    fetch("/api/inicio/queHacemos/")
       .then((res) => res.json())
       .then((data) => {
         setQueHacemos(data);

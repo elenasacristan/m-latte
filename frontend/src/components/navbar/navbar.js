@@ -10,7 +10,7 @@ const NavBar = () => {
   const [tipoActividad, setTipoActividad] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/actividades/tipoActividad/")
+    fetch("/api/actividades/tipoActividad/")
       .then((res) => res.json())
       .then((data) => setTipoActividad(data));
   }, []);

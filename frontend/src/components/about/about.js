@@ -7,7 +7,7 @@ const About = () => {
   const [aboutMe, setAboutMe] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/sobremi/sobremi/")
+    fetch("/api/sobremi/sobremi/")
       .then((res) => res.json())
       .then((data) => {
         setAboutMe(data[0]);
