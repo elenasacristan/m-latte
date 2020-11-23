@@ -64,6 +64,7 @@ const Contacto = () => {
       body: JSON.stringify(contact),
       headers: {
         "Content-Type": "application/json",
+        'X-CSRFToken': csrftoken
       },
     })
       .then((res) => {
