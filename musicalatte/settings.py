@@ -187,3 +187,8 @@ ADMIN_REORDER = (
     'contacto',
     'footer'
 )
+
+WHITENOISE_MIMETYPES = {
+    '.json': 'application/json',
+    '.js':  'application/javascript',
+}
