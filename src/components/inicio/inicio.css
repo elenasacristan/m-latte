@@ -50,7 +50,7 @@
 
 .inicio-hacemos-container h1 {
     font-family: 'Molle', cursive;
-    color: #C84E56;
+    color: #c45858;
     font-size: 2.5rem;
 }
 
@@ -69,7 +69,7 @@
     }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
     .inicio-hacemos-container {
         margin-top: -200px;
         padding: 200px 0px 180px;
@@ -85,7 +85,7 @@
     }
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 992px) {
     .inicio-hacemos-container {
         margin-top: -180px;
         clip-path: polygon(0% 70%, 100% 100%, 100% 0%, 0 20%);

@@ -16,7 +16,7 @@
 }
 
 .contacto .btn {
-    background-color: #3690a0;
+    background-color: #3091a1;
     color: white;
     padding-bottom: 0;
     border: none;
@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
     .contacto img {
         width: 100%;
     }

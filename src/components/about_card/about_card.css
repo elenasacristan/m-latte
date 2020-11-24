@@ -8,7 +8,7 @@
 }
 
 .about-card-container .fa {
-    color: #c84e56;
+    color: #c45858;
     font-size: 1.5rem;
 }
 
@@ -18,14 +18,14 @@
     font-family: Montserrat, sans-serif;
     font-family:'Palanquin Dark', sans-serif;
     font-weight: 800;
-    color: #4F9BA6;
+    color: #3091a1;
 }
 
 .about-card-container ul {
     font-size: 0.7rem;
 }
 
-@media screen and (min-width: 767px) and (max-width:991px) {
+@media screen and (min-width: 768px) and (max-width:991px) {
     .about-card-container .fa {
         font-size: 1.3rem;
     }

@@ -21,7 +21,7 @@
     top: -50px;
     text-align: center;
     width: 100%;
-    color:#4f9ba6;
+    color:#3091a1;
 }
 
 .timeline-item h5 {
@@ -69,7 +69,7 @@
     width: 25px;
     height: 25px;
     right: -12px;
-    background-color: rgb(238, 118, 118);
+    background-color: #c45858;
     border: 4px solid #131212;
     top: 15px;
     border-radius: 50%;
@@ -117,7 +117,7 @@
 /* Fix the circle for containers on the right side */
 .timeline-right::after {
     left: -13px;
-    background-color: rgb(54, 144, 160);
+    background-color: #3091a1;
 }
 
 /* The actual content */

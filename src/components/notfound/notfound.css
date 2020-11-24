@@ -5,13 +5,17 @@
     background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
 }
 
-
-
 .notfound img{
     width: 60%;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
+    .notfound img{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
     .notfound img{
         width: 30%;
     }
