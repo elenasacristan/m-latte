@@ -41,12 +41,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = True
 
-if development == True:
-    ALLOWED_HOSTS = []
-else:
-    ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+# DEBUG = development
+ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+
+# if development == True:
+#     ALLOWED_HOSTS = []
+# else:
+#     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -188,7 +191,7 @@ ADMIN_REORDER = (
     'footer'
 )
 
-WHITENOISE_MIMETYPES = {
-    '.json': 'application/json',
-    '.js':  'application/javascript',
-}
+# WHITENOISE_MIMETYPES = {
+#     '.json': 'application/json',
+#     '.js':  'application/javascript',
+# }
