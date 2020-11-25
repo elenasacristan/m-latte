@@ -2,6 +2,18 @@
     padding-top: 80px;
 }
 
+.container-sobre{
+    border: 15px double #3092a14f;
+    color: #6f6f6f;
+    background-color: rgb(246, 249, 250);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.container-sobre .col{
+    padding: 35px;
+}
+
 .about.container {
     width: 90%;
 }
@@ -27,6 +39,8 @@
 
 .about-marta-description {
     font-size: 0.8rem;
+    color: #6f6f6f;
+
 }
 
 .discografia-container {
@@ -56,6 +70,15 @@ html {
     .about-marta-description {
         font-size: 1rem;
     }
+
+    .container-sobre{
+        transform: rotate(-1deg);
+    }
+    .container-sobre .col{
+        transform: rotate(1deg);
+    }
+    
+    
 }
 
 

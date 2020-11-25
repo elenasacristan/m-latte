@@ -46,7 +46,7 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <Link onClick={closeDropDown} className="nav-link" to="/SobreMi">
-              Sobre Mi
+             Quiénes Somos
             </Link>
           </li>
           <li className="nav-item dropdown">

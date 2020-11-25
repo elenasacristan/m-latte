@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className="col-sm-6 d-flex justify-content-center justify-content-sm-end align-items-center">
               <a
-                href={`mailto:${footer.link1}`}
+                href={`mailto:${footer.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

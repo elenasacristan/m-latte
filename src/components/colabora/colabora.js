@@ -32,7 +32,12 @@ const Colabora = () => {
               <hr />
               <p className="mt-5">
                 {colabora.texto2}
-                <Link to="/contacto"> {colabora.palabra_link} </Link>
+                <a
+                  href={colabora.link_pago}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{" "}{colabora.palabra_link}{" "}
+                </a>
                 {colabora.texto3}
               </p>
             </div>

@@ -7,6 +7,7 @@ class Colabora(models.Model):
     texto2 = models.TextField(null=True, blank=True)
     palabra_link = models.CharField(max_length=100, null=True, blank=True)
     texto3 = models.TextField(null=True, blank=True)
+    link_pago = models.URLField(max_length=300,null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "5. COLABORA"

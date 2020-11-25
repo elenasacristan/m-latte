@@ -7,7 +7,6 @@ class Footer(models.Model):
     titulo3 =  models.CharField(max_length=200, null=True, blank=True)
     telefono =  models.CharField(max_length=50, null=True, blank=True)
     icono1 = models.CharField(max_length=20, null=True, blank=True)
-    link1 = models.URLField(max_length=200, null=True, blank=True)
     icono2 = models.CharField(max_length=20, null=True, blank=True)
     link2 = models.URLField(max_length=200, null=True, blank=True)
     icono3 = models.CharField(max_length=20, null=True, blank=True)

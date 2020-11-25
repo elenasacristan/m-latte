@@ -4,6 +4,6 @@ from .models import Contacto
 class ContactoAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'email','fecha')
     search_fields = ('email',)
-    ordering = ('fecha', 'email')
+    ordering = ('-fecha',)
 
 admin.site.register(Contacto, ContactoAdmin)

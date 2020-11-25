@@ -2,7 +2,7 @@
     padding-top: 20vh;
     padding-bottom: 8vh;
     min-height: 85vh;
-    background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, #dce0e0 60%, #a1d5dd 84%, #fff 100%);
 }
 
 .notfound img{

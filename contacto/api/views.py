@@ -10,6 +10,6 @@ class ContactoViewSet(viewsets.ModelViewSet):
     '''
     permission_classes = [AllowAny]
     http_method_names = ['post']
-    queryset = Contacto.objects.all().order_by('-fecha')
+    queryset = Contacto.objects.all()
     serializer_class = ContactoSerializer
 
