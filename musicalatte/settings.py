@@ -41,16 +41,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = development
 
-# DEBUG = development
-ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+# ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 
-# if development == True:
-#     ALLOWED_HOSTS = []
-# else:
-#     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
-# Application definition
+# in development 
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
