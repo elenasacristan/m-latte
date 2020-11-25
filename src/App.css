@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Wolesbro;
+    src: url('common/fonts/Wolesbro.otf');
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 h1,
@@ -13,25 +19,23 @@ h6,
 a {
     margin: 0;
     padding: 0;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main-title{
-    font-family: 'Molle', cursive;
-
+    font-family: 'Wolesbro', cursive;
 }
 
 .title {
     color: #c45858;
-    font-weight: bolder;
     font-size: 1.8rem;
 }
 
 .subtitle {
     font-weight: bolder;
-    color: #4a7d89;   
+    color: #c45858;
     font-size: 2.7rem;
-    font-family: 'Caveat';
+    font-family: 'Wolesbro', cursive;
 }
 
 

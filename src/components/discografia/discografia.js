@@ -32,9 +32,9 @@ const Discografia = () => {
         <div className="timeline m-auto">
           {discos.map((disco, index) =>
             index % 2 === 0 ? (
-              <Disco key={disco.id} disco={disco} side="left" />
+              <Disco key={disco.id} disco={disco} side="left"/>
             ) : (
-              <Disco key={disco.id} disco={disco} side="right" />
+              <Disco key={disco.id} disco={disco} side="right"/>
             )
           )}
         </div>

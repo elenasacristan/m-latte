@@ -4,7 +4,7 @@
     top: -50px;
     text-align: center;
     width: 100%;
-    font-weight: bolder;
+    font-weight: 900;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 5px #000000;
 }
@@ -13,6 +13,7 @@
     font-size: 0.9rem;
     font-weight: bold;
     padding-bottom: 10px;
+    color:#3091a1;
 }
 
 .timeline-item h4{
@@ -21,7 +22,7 @@
     top: -50px;
     text-align: center;
     width: 100%;
-    color:#3091a1;
+    color:#b4b4b4;
 }
 
 .timeline-item h5 {
@@ -95,9 +96,9 @@
     width: 0;
     z-index: 1;
     right: 20px;
-    border: medium solid rgb(153, 153, 153);
+    border: medium solid #3091a1;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgb(153, 153, 153);
+    border-color: transparent transparent transparent #3091a1;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -109,9 +110,9 @@
     width: 0;
     z-index: 1;
     left: 20px;
-    border: medium solid rgb(153, 153, 153);
+    border: medium solid #3091a1;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(153, 153, 153) transparent transparent;
+    border-color: transparent #3091a1 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -126,7 +127,7 @@
     background-color: rgb(255, 255, 255);
     position: relative;
     border-radius: 6px;
-    box-shadow: 1px 1px 5px 2px #9f9f9f;
+    box-shadow: 1px 1px 5px 2px #3091a1;
     margin-bottom: 50px;
 }
 

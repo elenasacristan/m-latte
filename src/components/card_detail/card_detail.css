@@ -16,6 +16,10 @@
     width: 100%;
     font-size: 3.5rem;
 }
+.card-detail-title2{
+    font-weight: 900;
+    color:  #3091a1;
+}
 
 .card-detail h4 {
     font-size: 1.1rem;
@@ -40,7 +44,8 @@
 }
 
 .card-detail-circle h4 {
-    font-family: 'Caveat';
+    /* font-family: 'Caveat'; */
+    font-family: 'Wolesbro', cursive;
     font-size: 1.2rem;
 }
 
