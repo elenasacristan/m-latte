@@ -17,11 +17,11 @@ const Footer = () => {
     return <div className="placeholder-footer"></div>;
   } else {
     return (
-      <div className="footer p-3">
+      <div className="footer pt-4 p-3">
         <div className="container">
           <div className="row">
             <div className="col-sm-6 text-center text-sm-left pb-2 pb-md-0">
-              <h6 className="mb-4">{footer.titulo}</h6>
+              <h6 className="mb-3">{footer.titulo}</h6>
               <p>
                 <span className="d-none d-md-inline">{footer.titulo2} </span>
                 {footer.email}

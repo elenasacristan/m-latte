@@ -1,6 +1,6 @@
 .contacto {
-    padding-top: 12vh;
-    background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
+    padding-top: 14vh;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, #dce0e0 60%, #a1d5dd 84%, #fff 100%);
 }
 
 .contacto img {

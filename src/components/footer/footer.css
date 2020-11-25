@@ -1,40 +1,46 @@
 .footer {
-    background-color: #383838;
-    color: white;
-    position: relative;
-    z-index: 1;
+  background-image: url("../../common/images/footer.png");
+  padding-bottom: 50px;
+  width: 100%;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .footer h6 {
-    font-size: 0.7rem;
-    font-weight: bolder;
+  font-size: 1.5em;
+  font-family: 'Wolesbro', cursive;
 }
 
 .footer p {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .footer .fa {
-    color: white;
-    font-size: 1.3rem;
-    transition: all .5s ease;
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.5s ease;
 }
 
 .footer .fa:hover {
-    color: #acacac;
+  color: #acacac;
 }
 
-.placeholder-footer{
-    background-color: #383838;
-    height: 20vh;
+.placeholder-footer {
+  background-color: #383838;
+  height: 20vh;
 }
 
 @media screen and (min-width: 400px) {
-    .footer h6 {
-        font-size: 0.8rem;
-    }
+  .footer h6 {
+    font-size: 2rem;
+    color:#ffffff;
+  }
 
-    .footer p {
-        font-size: 0.8rem;
-    }
+  .footer p {
+    font-size: 0.8rem;
+  }
 }

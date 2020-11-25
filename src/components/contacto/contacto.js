@@ -138,7 +138,7 @@ const Contacto = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="descripcion">En que podemos ayudarte?</label>
+              <label htmlFor="descripcion">¿En qué podemos ayudarte?</label>
               <textarea
                 onChange={handleChange}
                 className="form-control"

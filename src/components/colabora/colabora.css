@@ -1,7 +1,6 @@
 .colabora {
     min-height: 85vh;
-    padding-top: 12vh;
-    background-image: linear-gradient(to bottom, rgb(255 255 255) 40%, #62a3ad 85%);
+    padding-top: 14vh;
 }
 
 .colabora img {
@@ -12,14 +11,18 @@
     font-size: 0.8rem;
 }
 
+.colabora strong{
+    color: #3091a1;
+}
+
 .colabora a {
-    color: black;
+    color: #3091a1;
     font-weight: bolder;
     transition: all .5s ease;
 }
 
 .colabora a:hover {
-    color: #525252;
+    color: #63afbb;
     text-decoration: none;
 }
 
@@ -34,4 +37,3 @@
         width: 100%;
     }
 }
-

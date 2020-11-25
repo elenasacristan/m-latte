@@ -28,7 +28,7 @@ a {
 
 .title {
     color: #c45858;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .subtitle {
@@ -47,6 +47,6 @@ a {
 
 @media only screen and (min-width: 576px) {
     .title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
