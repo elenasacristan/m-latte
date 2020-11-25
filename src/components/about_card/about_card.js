@@ -1,7 +1,7 @@
 import React from "react";
 import "./about_card.css";
 
-const About_card = ({ item }) => {
+const AboutCard = ({ item }) => {
   return (
     <div className="col-md-4" data-aos="flip-up">
       <div className="about-card-container d-flex flex-column mx-auto mb-4 mb-md-0">
@@ -19,4 +19,4 @@ const About_card = ({ item }) => {
   );
 };
 
-export default About_card;
+export default AboutCard;

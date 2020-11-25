@@ -14,6 +14,7 @@ const Disco = ({ side, disco }) => {
             <img
               className="mb-3 mx-lg-2"
               src={`https://res.cloudinary.com/dm3k4mri1/${disco.imagen_disco}`}
+              alt={`caratula disco ${disco.titulo}`}
             />
           </div>
           <div className="col-lg-7 mt-2 mt-lg-0">

@@ -22,7 +22,7 @@ const Colabora = () => {
           <h2 className="main-title title mt-4 mb-5">{colabora.titulo}</h2>
           <div className="row d-flex align-items-center">
             <div className="col-lg-5 d-flex justify-content-center d-lg-block">
-              <img src={colaborate}></img>
+              <img src={colaborate} alt="ilustracion colabora"></img>
             </div>
             <div className="mt-5 mt-lg-0 col-lg-6 mx-auto">
               <p>{colabora.texto1}</p>

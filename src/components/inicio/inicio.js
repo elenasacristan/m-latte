@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./inicio.css";
-import About_card from "../about_card/about_card";
-import Hacemos_item from "../hacemos-item/Hacemos_item";
+import AboutCard from "../about_card/about_card";
+import HacemosItem from "../hacemos-item/Hacemos_item";
 import Spinner from "../Spinner/Spinner";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -46,7 +46,7 @@ const Inicio = () => {
         <div className="inicio-proposito container">
           <div className="row pt-5 pb-4 d-flex justify-content-center">
             {queQueremos.map((item) => (
-              <About_card key={item.id} item={item} />
+              <AboutCard key={item.id} item={item} />
             ))}
           </div>
         </div>
@@ -58,7 +58,7 @@ const Inicio = () => {
                 <h1>{inicio.title2}</h1>
               </div>
               {queHacemos.map((item) => (
-              <Hacemos_item key={item.id} item={item} />
+              <HacemosItem key={item.id} item={item} />
             ))}
             </div>
           </div>

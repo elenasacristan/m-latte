@@ -19,6 +19,7 @@ const Foto = ({ rotate, foto }) => {
         style={loaded ? {} : { display: "none" }}
         src={`https://res.cloudinary.com/dm3k4mri1/${foto.foto}`}
         onLoad={() => setLoaded(true)}
+        alt="foto"
       />
       <h6 className="mt-4 text-center">{foto.titulo}</h6>
     </div>

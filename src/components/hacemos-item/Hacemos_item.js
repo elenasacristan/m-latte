@@ -2,7 +2,7 @@ import React from "react";
 import "./Hacemos_item.css";
 import {Link} from "react-router-dom"
 
-const Hacemos_item = ({ item }) => {
+const HacemosItem = ({ item }) => {
   return (
     <div className="col-sm-4 col-lg-2 d-flex flex-column mx-auto align-items-center mb-4 mb-md-0">
       <i className={`fa ${item.logo_name}`}></i>
@@ -12,4 +12,4 @@ const Hacemos_item = ({ item }) => {
   );
 };
 
-export default Hacemos_item;
+export default HacemosItem;

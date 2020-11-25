@@ -94,7 +94,7 @@ const Contacto = () => {
       </h2>
       <div className="row d-flex align-items-center">
         <div className="col-lg-6 d-flex justify-content-center d-lg-block px-sm-5 px-lg-0 px-xl-4">
-          <img src={contacto_img}></img>
+          <img src={contacto_img} alt="ilustracion contacto"></img>
         </div>
         <div className="mt-5 mt-lg-0 col col-lg-5">
           {errorMessage.error || errorMessage.message ? (
