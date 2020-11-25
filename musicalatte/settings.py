@@ -42,8 +42,9 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# ALLOWED_HOSTS = ['desktop-m46m9jt']
 
-# ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 
 # in development 
 # if DEBUG:
@@ -51,7 +52,7 @@ DEBUG = False
 # else:
 #     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 
-ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+# ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
 
 
 INSTALLED_APPS = [
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'whitenoise.runserver_nostatic',
     'rest_framework',
     'corsheaders',
     'admin_reorder',
@@ -76,13 +78,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'admin_reorder.middleware.ModelAdminReorder',
 ]
 
@@ -153,9 +155,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'     
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/static')] 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = (
+    'whitenoise.storage.CompressedManifestStaticFilesStorage')
+
+# WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build', 'root')
+WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build')
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
@@ -194,8 +201,3 @@ ADMIN_REORDER = (
     'contacto',
     'footer'
 )
-
-# WHITENOISE_MIMETYPES = {
-#     '.json': 'application/json',
-#     '.js':  'application/javascript',
-# }
