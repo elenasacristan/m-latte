@@ -8,7 +8,7 @@ class ActividadSerializer(serializers.ModelSerializer):
         model = Actividad
         fields = ['id', 'foto', 'titulo', 
         'text_boton', 'descripcion','logo_name', 'titulo2',
-         'destinatarios',  'titulo3', 'autor', 'tipo_actividad']
+         'destinatarios',  'titulo3', 'autor', 'tipo_actividad', 'titulo4', 'icono', 'duracion']
 
 
 class TipoActividadSerializer(serializers.ModelSerializer):  

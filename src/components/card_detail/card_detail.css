@@ -28,7 +28,6 @@
 }
 
 .card-detail ul {
-    margin-left: 15px;
     font-size: 0.8rem;
 }
 
@@ -44,7 +43,6 @@
 }
 
 .card-detail-circle h4 {
-    /* font-family: 'Caveat'; */
     font-family: 'Wolesbro', cursive;
     font-size: 1.2rem;
 }
@@ -55,7 +53,7 @@
     }
 
     .card-detail ul {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-left: 35px;
     }
 

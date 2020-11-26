@@ -57,6 +57,7 @@
 }
 
 /* Container around content */
+
 .timeline-item {
     padding: 10px 30px;
     position: relative;
@@ -194,7 +195,7 @@ screen and (max-width:767px) {
     .timeline-item::before {
         left: 60px;
         border-width: 10px 10px 10px 0;
-        border-color: transparent rgb(153, 153, 153) transparent transparent;
+        border-color: transparent #3091a1 transparent transparent;
     }
 
     .timeline-item h2 {

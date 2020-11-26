@@ -1,5 +1,31 @@
 .detail {
-    background-color: rgb(246, 246, 246);
+    background-image: linear-gradient(to bottom, rgb(246, 246, 246) 30%, #fff 95%);
+}
+
+.container-image-duration {
+    position: relative;
+}
+
+.duracion {
+    position: absolute;
+    color: #3091a1;
+    background-color: #ffffff;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 30px;
+    height: 70px;
+    width: 70px;
+    box-shadow: 3px 3px 4px 2px #3091a1;
+}
+
+.duracion .fa {
+    font-size: 1.5rem;
+    color: #c45858;
+}
+
+.duracion p {
+    font-size: 0.7rem;
+    font-weight: 500;
 }
 
 .detail .container {
@@ -15,7 +41,7 @@
     box-shadow: 0px 0px 8px 2px #3091a1;
 }
 
-.detail p {
+.detail .description p {
     font-size: 0.8rem;
 }
 
@@ -23,8 +49,26 @@
     .detail .subtitle {
         font-size: 2.7rem;
     }
+    .detail .description p {
+        font-size: 0.9rem;
+    }
+    .duracion {
+        height: 95px;
+        width: 95px;
+        right: 35px;
+    }
+    .duracion .fa {
+        font-size: 1.7rem;
+    }
+    
+    .duracion p {
+        font-size: 0.9rem;
+    }
+    
+}
 
-    .detail p {
-        font-size: 1rem;
+@media only screen and (min-width: 768px) and (max-width: 993px) {
+    .duracion {
+        bottom: 230px;
     }
 }
