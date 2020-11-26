@@ -13,3 +13,11 @@ class Contacto(models.Model):
     def __str__(self):
         return self.email
 
+class IntroContacto(models.Model):
+    texto = models.TextField(null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = "6.1 TEXTO CONTACTO"
+
+    def __str__(self):
+        return self.texto

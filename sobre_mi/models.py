@@ -23,6 +23,8 @@ class Disco(models.Model):
     titulo = models.CharField(max_length=100, null=True, blank=True)
     autor = models.CharField(max_length=100, null=True, blank=True)    
     imagen_disco = CloudinaryField('imagen_disco', null=True, blank=True)
+    titulo1 = models.CharField(max_length=50, null=True, blank=True) 
+    colaborationes = models.TextField(null=True, blank=True)
     descripcion = models.TextField(null=True, blank=True)
 
     class Meta:

@@ -22,6 +22,11 @@ class Actividad(models.Model):
     destinatarios = models.TextField(null=True, blank=True)
     titulo3 = models.CharField(max_length=100, null=True, blank=True)
     autor = models.CharField(max_length=100, null=True, blank=True)
+    titulo4 = models.CharField(max_length=100, null=True, blank=True)
+    icono = models.CharField(max_length=20, null=True, blank=True)
+    duracion = models.CharField(max_length=100, null=True, blank=True)
+
+
 
     class Meta:
         verbose_name_plural = "3.1 ACTIVIDADES"
