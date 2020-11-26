@@ -41,7 +41,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # ALLOWED_HOSTS = ['desktop-m46m9jt','127.0.0.1']
 # ALLOWED_HOSTS = []
 
@@ -66,7 +66,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'rest_framework',
     'corsheaders',
-    'admin_reorder',
+    # 'admin_reorder',
     'inicio',
     'sobre_mi',
     'actividades',
@@ -202,3 +202,5 @@ ADMIN_REORDER = (
     'contacto',
     'footer'
 )
+
+
