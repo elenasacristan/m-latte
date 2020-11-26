@@ -19,35 +19,37 @@ const About = () => {
     return <Spinner />;
   } else {
     return (
-      <div className="about mt-5 mx-auto container" id="about">
-        <div className="row mb-5 container-sobre">
-          <div className="col">
-            <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
-            {aboutMe.descripcion0.split("\\").map((parrafo, index) => (
-              <p key={index} className="about-marta-description">
-                {parrafo}
-              </p>
-            ))}
+      <div className="bkg-about">
+        <div className="about mt-5 mx-auto container" id="about">
+          <div className="row mb-5 container-sobre">
+            <div className="col">
+              <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
+              {aboutMe.descripcion0.split("\\").map((parrafo, index) => (
+                <p key={index} className="about-marta-description">
+                  {parrafo}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-12 col-xl-5 about-marta mt-5">
-            <h2 className="main-title title mb-sm-4">{aboutMe.titulo1}</h2>
-            <h4>{aboutMe.titulo2}</h4>
-            <img
-              className="img-fluid"
-              src={`https://res.cloudinary.com/dm3k4mri1/${aboutMe.imagen_marta}`}
-              alt="Marta Revuelta"
-            />
+          <div className="row">
+            <div className="col-12 col-xl-5 about-marta mt-5">
+              <h2 className="main-title title mb-sm-4">{aboutMe.titulo1}</h2>
+              <h4>{aboutMe.titulo2}</h4>
+              <img
+                className="img-fluid"
+                src={`https://res.cloudinary.com/dm3k4mri1/${aboutMe.imagen_marta}`}
+                alt="Marta Revuelta"
+              />
 
-            {aboutMe.descripcion.split("\\").map((parrafo, index) => (
-              <p key={index} className="about-marta-description">
-                {parrafo}
-              </p>
-            ))}
-          </div>
-          <div className="col-12 offset-xl-1 col-xl-6 discografia-container">
-            <Discografia />
+              {aboutMe.descripcion.split("\\").map((parrafo, index) => (
+                <p key={index} className="about-marta-description">
+                  {parrafo}
+                </p>
+              ))}
+            </div>
+            <div className="col-12 offset-xl-1 col-xl-6 discografia-container">
+              <Discografia />
+            </div>
           </div>
         </div>
       </div>

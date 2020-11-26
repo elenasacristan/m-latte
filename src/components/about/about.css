@@ -2,15 +2,19 @@
     padding-top: 80px;
 }
 
-.container-sobre{
-    border: 15px double #3092a14f;
-    color: #6f6f6f;
-    background-color: rgb(246, 249, 250);
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+.bkg-about{
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 20%, #fff 100%);
 }
 
-.container-sobre .col{
+.container-sobre {
+    border: 5px double #3092a14f;
+    color: #6f6f6f;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+}
+
+.container-sobre .col {
     padding: 35px;
 }
 
@@ -70,15 +74,6 @@ html {
     .about-marta-description {
         font-size: 1rem;
     }
-
-    .container-sobre{
-        transform: rotate(-1deg);
-    }
-    .container-sobre .col{
-        transform: rotate(1deg);
-    }
-    
-    
 }
 
 
