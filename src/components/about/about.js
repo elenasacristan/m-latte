@@ -20,36 +20,35 @@ const About = () => {
   } else {
     return (
       <div className="bkg-about">
-        <div className="about mt-5 mx-auto container" id="about">
-          <div className="row mb-5 container-sobre">
-            <div className="col">
-              <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
-              {aboutMe.descripcion0 && aboutMe.descripcion0.split("\\").map((parrafo, index) => (
+        <div className="about mt-5 mx-auto container px-3 px-sm-1" id="about">
+          <div className="mb-5 container-sobre p-3 p-sm-5">
+            <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
+            {aboutMe.descripcion0 &&
+              aboutMe.descripcion0.split("\\").map((parrafo, index) => (
                 <p key={index} className="about-marta-description">
                   {parrafo}
                 </p>
               ))}
-            </div>
           </div>
           <div className="row">
-            <div className="col-12 col-xl-5 about-marta mt-5">
+            <div className="col-12 col-xl-5 about-marta mt-4">
               <h2 className="main-title title mb-sm-4">{aboutMe.titulo1}</h2>
               <h4>{aboutMe.titulo2}</h4>
               <img
                 className="img-fluid"
                 src={`https://res.cloudinary.com/dm3k4mri1/${aboutMe.imagen_marta}`}
                 alt="Marta Revuelta"
+                className="my-4"
               />
 
-              {aboutMe.descripcion && aboutMe.descripcion.split("\\").map((parrafo, index) => (
-                <p key={index} className="about-marta-description">
-                  {parrafo}
-                </p>
-              ))}
+              {aboutMe.descripcion &&
+                aboutMe.descripcion.split("\\").map((parrafo, index) => (
+                  <p key={index} className="about-marta-description">
+                    {parrafo}
+                  </p>
+                ))}
             </div>
-            <div className="col-12 offset-xl-1 col-xl-6 discografia-container">
               <Discografia />
-            </div>
           </div>
         </div>
       </div>

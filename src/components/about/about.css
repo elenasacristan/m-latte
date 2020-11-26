@@ -1,9 +1,9 @@
-.about {
-    padding-top: 80px;
+.bkg-about {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 20%, #fff 100%);
 }
 
-.bkg-about{
-    background-image: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 20%, #fff 100%);
+.about {
+    padding-top: 80px;
 }
 
 .container-sobre {
@@ -14,21 +14,13 @@
     background-color: white;
 }
 
-.container-sobre .col {
-    padding: 35px;
-}
-
-.about.container {
-    width: 90%;
-}
-
 .about-marta {
     position: relative;
 }
 
 .about-marta h4 {
     position: absolute;
-    top: 49px;
+    top: 58px;
     left: 30px;
     color: #3091a1;
     font-size: 1.3rem;
@@ -37,80 +29,33 @@
 
 .about-marta img {
     width: 95%;
-    margin: 40px auto;
     box-shadow: 15px -10px 1px 1px #3690a03d;
 }
 
 .about-marta-description {
     font-size: 0.8rem;
     color: #6f6f6f;
-
 }
-
-.discografia-container {
-    position: relative;
-    margin-top: 100px;
-    transform: skew(0deg, -8deg) translateY(-20px);
-}
-
-.discografia-container:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 100vw;
-    background-image: linear-gradient(rgb(240, 240, 240) 10%, rgb(255, 255, 255) 90%);
-}
-
-html {
-    overflow-x: hidden;
-}
-
 
 @media screen and (min-width: 500px) {
-
     .about-marta-description {
         font-size: 1rem;
     }
 }
 
-
 @media screen and (min-width: 576px) {
-    .about.container {
-        width: 100%;
-    }
-
     .about .title {
         font-size: 3rem;
     }
 
     .about-marta h4 {
         font-size: 2rem;
-        top: 88px;
+        top: 80px;
         left: 45px;
-    }
-
-    .about {
-        width: 80%;
     }
 
     .about-marta img {
         box-shadow: 30px -20px 1px 1px #3690a03d;
     }
-
 }
 
-
-
-@media screen and (min-width: 1200px) {
-    .discografia-container {
-        transform: skew(0deg, 0deg) translateY(-20px);
-    }
-
-    .discografia-container:before {
-        width: 25vw;
-        background-image: none;
-    }
-}
