@@ -42,7 +42,7 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-# ALLOWED_HOSTS = ['desktop-m46m9jt']
+# ALLOWED_HOSTS = ['desktop-m46m9jt','127.0.0.1']
 # ALLOWED_HOSTS = []
 
 ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     'rest_framework',
     'corsheaders',
     'admin_reorder',
