@@ -46,14 +46,14 @@ const Inicio = () => {
           }}
         >
           <div className="container-sentence d-flex">
-            <h3 className="text-center">
+            <h3 className="text-center pt-4 px-2 px-sm-5">
               {inicio.frase}
               <br />
               {inicio.author}
             </h3>
           </div>
         </div>
-        <div className="inicio-proposito container">
+        <div className="container px-4 px-sm-0">
           <div className="row pt-5 pb-4 d-flex justify-content-center">
             {queQueremos.map((item) => (
               <AboutCard key={item.id} item={item} />
