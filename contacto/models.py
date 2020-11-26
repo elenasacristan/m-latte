@@ -14,7 +14,9 @@ class Contacto(models.Model):
         return self.email
 
 class IntroContacto(models.Model):
+    titulo = models.CharField(max_length=100, null=True, blank=True)
     texto = models.TextField(null=True, blank=True)
+    text_bold = models.TextField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "6.1 TEXTO CONTACTO"

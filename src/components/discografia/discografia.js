@@ -27,7 +27,7 @@ const Discografia = () => {
     return "";
   } else{
     return (
-      <div className="discografia">
+      <div className="discografia mt-5">
         <h4 className="text-center mb-5 title-discografia mt-lg-0 py-xl-0">{titleDiscografia}</h4>
         <div className="timeline m-auto">
           {discos.map((disco, index) =>

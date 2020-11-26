@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="footer pt-4 p-3">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 text-center text-sm-left pb-2 pb-md-0">
+            <div className="col-sm-6 text-center text-sm-left pb-2 pb-md-0 pt-lg-3">
               <h6 className="mb-3">{footer.titulo}</h6>
               <p>
                 <span className="d-none d-md-inline">{footer.titulo2} </span>
