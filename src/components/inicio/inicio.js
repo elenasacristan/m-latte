@@ -3,8 +3,8 @@ import "./inicio.css";
 import AboutCard from "../about_card/about_card";
 import HacemosItem from "../hacemos-item/Hacemos_item";
 import Spinner from "../Spinner/Spinner";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Inicio = () => {
   const [inicio, setInicio] = useState({});
@@ -27,19 +27,29 @@ const Inicio = () => {
       .then((data) => {
         setQueHacemos(data);
       });
-      Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000 });
   }, []);
 
-  if (Object.keys(inicio) < 1 || queQueremos.length < 1 || setQueHacemos.length < 1) {
-    return <Spinner/>;
+  if (
+    Object.keys(inicio) > 0 &&
+    queQueremos.length > 0 &&
+    setQueHacemos.length > 0
+  ) {
+    return <Spinner />;
   } else {
     return (
       <div className="inicio">
-        <div className="inicio-banner" style={{ backgroundImage:`url(https://res.cloudinary.com/dm3k4mri1/${inicio.imagen_inicio})` }}>
+        <div
+          className="inicio-banner"
+          style={{
+            backgroundImage: `url(https://res.cloudinary.com/dm3k4mri1/${inicio.imagen_inicio})`,
+          }}
+        >
           <div className="container-sentence d-flex">
             <h3 className="text-center">
               {inicio.frase}
-              <br />{inicio.author}
+              <br />
+              {inicio.author}
             </h3>
           </div>
         </div>
@@ -58,8 +68,8 @@ const Inicio = () => {
                 <h1>{inicio.title2}</h1>
               </div>
               {queHacemos.map((item) => (
-              <HacemosItem key={item.id} item={item} />
-            ))}
+                <HacemosItem key={item.id} item={item} />
+              ))}
             </div>
           </div>
         </div>

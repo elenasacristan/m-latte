@@ -3,6 +3,9 @@
     background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, #dce0e0 60%, #a1d5dd 84%, #fff 100%);
 }
 
+.contacto img{
+    width: 100%;
+}
 
 .contacto p{
     font-size: 0.9rem;
@@ -64,7 +67,7 @@
 
 @media screen and (min-width: 992px) {
     .contacto img {
-        width: 100%;
+        width: 70%;
     }
 
     .contacto {

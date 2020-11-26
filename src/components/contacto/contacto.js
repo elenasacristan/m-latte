@@ -111,7 +111,7 @@ const Contacto = () => {
             <div className="row">
               <div className="col-12">
                 <div className="pb-4 text-center intro-contact">
-                  {textContacto.texto.split("\\").map((parrafo, index) => (
+                  {textContacto.texto && textContacto.texto.split("\\").map((parrafo, index) => (
                     <p key={index}>{parrafo}</p>
                   ))}
                   {textContacto.text_bold.split("\\").map((parrafo, index) => (

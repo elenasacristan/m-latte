@@ -49,7 +49,7 @@ const Detail = ({ match }) => {
               )}
             </div>
             <div className="description col-12 col-md-6 col-lg-7 col-xl-8 pl-lg-5">
-              {actividad.descripcion.split("\\").map((parrafo, index) => (
+              {actividad.descripcion && actividad.descripcion.split("\\").map((parrafo, index) => (
                 <p key={index}>{parrafo}</p>
               ))}
             </div>

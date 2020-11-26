@@ -28,17 +28,24 @@ const Colabora = () => {
               <p>
                 <strong>{colabora.n_cuenta}</strong>
               </p>
-              <hr />
-              <p className="mt-5">
-                {colabora.texto2}
-                <a
-                  href={colabora.link_pago}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >{" "}{colabora.palabra_link}{" "}
-                </a>
-                {colabora.texto3}
-              </p>
+
+              {colabora.link_pago && colabora.palabra_link && (
+                <>
+                  <hr />
+                  <p className="mt-5">
+                    {colabora.texto2}
+                    <a
+                      href={colabora.link_pago}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      {colabora.palabra_link}{" "}
+                    </a>
+                    {colabora.texto3}
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>

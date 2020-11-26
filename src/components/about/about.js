@@ -24,7 +24,7 @@ const About = () => {
           <div className="row mb-5 container-sobre">
             <div className="col">
               <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
-              {aboutMe.descripcion0.split("\\").map((parrafo, index) => (
+              {aboutMe.descripcion0 && aboutMe.descripcion0.split("\\").map((parrafo, index) => (
                 <p key={index} className="about-marta-description">
                   {parrafo}
                 </p>
@@ -41,7 +41,7 @@ const About = () => {
                 alt="Marta Revuelta"
               />
 
-              {aboutMe.descripcion.split("\\").map((parrafo, index) => (
+              {aboutMe.descripcion && aboutMe.descripcion.split("\\").map((parrafo, index) => (
                 <p key={index} className="about-marta-description">
                   {parrafo}
                 </p>

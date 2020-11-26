@@ -10,7 +10,7 @@ const CardDetail = ({ actividad }) => {
       ></i>
       <h4 className="pl-3 pl-sm-5 card-detail-title2">{actividad.titulo2}</h4>
       <ul className="pb-5 pb-sm-4">
-        {actividad.destinatarios.split("\\").map((destinatario) => (
+        {actividad.destinatarios && actividad.destinatarios.split("\\").map((destinatario) => (
           <li key={destinatario}>{destinatario}</li>
         ))}
       </ul>
