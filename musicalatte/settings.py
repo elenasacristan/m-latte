@@ -41,11 +41,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # ALLOWED_HOSTS = ['desktop-m46m9jt','127.0.0.1']
 # ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com','*']
 
 # in development 
 # if DEBUG:
@@ -204,36 +204,3 @@ ADMIN_REORDER = (
 )
 
 ADMINS = [('elena', 'elenitta1983@yahoo.es')]
-
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'verbose': {
-#             'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-#             'datefmt' : "%d/%b/%Y %H:%M:%S"
-#         },
-#         'simple': {
-#             'format': '%(levelname)s %(message)s'
-#         },
-#     },
-#     'handlers': {
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': 'mysite.log',
-#             'formatter': 'verbose'
-#         },
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers':['file'],
-#             'propagate': True,
-#             'level':'DEBUG',
-#         },
-#         'MYAPP': {
-#             'handlers': ['file'],
-#             'level': 'DEBUG',
-#         },
-#     }
-# }
