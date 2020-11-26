@@ -6,11 +6,11 @@ const Disco = ({ side, disco }) => {
 
   return (
     <div className={`timeline-item timeline-${side}`} data-aos="fade-up">
-      <div className="timeline-content text-center">
+      <div className="text-center disco">
         <h2>{disco.year}</h2>
         <div className="row disco-titulo-autor pb-4 pb-lg-0 px-1">
           <div className="col px-0">
-            <h3 className="disco-titulo">{disco.titulo}</h3>
+            <h3 className="pb-1 pb-lg-3">{disco.titulo}</h3>
             <h5 className="text-md-right pr-md-4">{disco.autor}</h5>
           </div>
         </div>

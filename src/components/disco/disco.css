@@ -1,4 +1,14 @@
-.timeline-item h2 {
+/* The actual content */
+.disco {
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 2px #3091a1;
+    margin-bottom: 50px;
+}
+
+.disco h2 {
     position: relative;
     font-size: 2.3rem;
     top: -38px;
@@ -9,13 +19,14 @@
     text-shadow: 1px 1px 5px #267e8b;
 }
 
+.disco p {
+    font-size: 0.6rem;
+}
 
-.timeline-item h4 {
-    position: relative;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
-    color: #b4b4b4;
+.disco-titulo-autor h3 {
+    font-size: 1.1rem;
+    color: #3091a1;
+    font-family: 'Wolesbro', cursive;
 }
 
 .disco-titulo-autor h5 {
@@ -27,110 +38,18 @@
     margin-top: -18px;
 }
 
-.disco-titulo {
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    color: #3091a1;
-    font-family: 'Wolesbro', cursive;
-}
-
-.timeline-item img {
+.disco-details img {
     width: 100%;
     max-width: 180px;
 }
 
-.timeline-item p {
-    font-size: 0.6rem;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 5px;
-    background-color: rgb(219, 219, 219);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -4px;
-}
-
-/* Container around content */
-
-.timeline-item {
-    padding: 10px 30px;
+.disco-details h4 {
+    font-family: 'Wolesbro', cursive;
     position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* The circles on the timeline */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12px;
-    background-color: #c45858;
-    border: 4px solid #131212;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-/* Place the container to the left */
-.timeline-left {
-    left: 0;
-}
-
-/* Place the container to the right */
-.timeline-right {
-    left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.timeline-left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 20px;
-    border: medium solid #3091a1;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #3091a1;
-}
-
-/* Add arrows to the right container (pointing left) */
-.timeline-right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 20px;
-    border: medium solid #3091a1;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #3091a1 transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.timeline-right::after {
-    left: -13px;
-    background-color: #3091a1;
-}
-
-/* The actual content */
-.timeline-content {
-    padding: 0px 20px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 1px 1px 5px 2px #3091a1;
-    margin-bottom: 50px;
+    font-size: 1.rem;
+    text-align: center;
+    width: 100%;
+    color: #b4b4b4;
 }
 
 .colaboracion {
@@ -146,23 +65,14 @@
 }
 
 
-
 @media screen and (min-width: 400px) {
-    .disco-titulo {
+    .disco-titulo-autor h3{
         font-size: 1.4rem;
     }
-
-    .timeline-item h5 {
-        font-size: 0.7rem;
-    }
-    .colabora-title {
-        font-size: 0.7rem;
-    }
-    .timeline-item p {
+    .disco-titulo-autor h5, .colabora-title, .disco p {
         font-size: 0.7rem;
     }
 }
-
 
 
 @media screen and (min-width: 992px) {
@@ -170,7 +80,7 @@
         font-size: 2rem;
     }
 
-    .timeline-item h5 {
+    .disco-titulo-autor h5 {
         font-size: 0.8rem;
     }
 }
@@ -178,56 +88,14 @@
 @media screen and (min-width: 1200px),
 screen and (max-width:767px) {
 
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-
-    /* Full-width containers */
-    .timeline-item {
-        width: 100%;
-        min-width: 250px;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline-item::before {
-        left: 60px;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #3091a1 transparent transparent;
-    }
-
-    .timeline-item h2 {
+    .disco h2 {
         font-size: 2rem;
         top: -30px;
     }
 
-    .timeline-item h4 {
+    .disco-details h4 {
         font-size: 1rem;
     }
 
-    /* Make sure all circles are at the same spot */
-    .timeline-left::after,
-    .timeline-right::after {
-        left: 17px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .timeline-right {
-        left: 0%;
-    }
 }
 
-
-@media screen and (min-width: 1200px) {
-    .timeline-item {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .timeline-item {
-        width: 115%;
-    }
-}
