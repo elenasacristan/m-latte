@@ -1,30 +1,119 @@
+.discografia-container {
+    position: relative;
+    margin-top: 50px;
+    transform: skew(0deg, -8deg) translateY(-20px);
+}
+
 /* The actual timeline (the vertical ruler) */
+.discografia-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(rgb(255, 255, 255) 10%, rgb(220, 236, 238) 90%, rgb(255, 255, 255) 100%);
+}
+
 .discografia {
     transform: skew(0deg, 8deg) translateY(-20px);
-    padding-top: 100px;
-}
-
-.discografia h4 {
-    font-family: 'Wolesbro', cursive;
-    font-size: 1.7rem;
-    padding-bottom: 20px;
-}
-
-.left-disco{
-    transform: rotate(2deg);
+    padding-top: 50px;
 }
 
 .title-discografia{
     color:#c45858;
+    font-family: 'Wolesbro', cursive;
+    font-size: 2rem;
 }
 
 .timeline {
     position: relative;
-    left:-20px;
+    left:-25px;
 }
 
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    background-color: rgb(219, 219, 219);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+
+/* Container around content */
+.timeline-item {
+    padding: 10px 30px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: #c45858;
+    border: 4px solid #131212;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline-left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.timeline-right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 20px;
+    border: medium solid #3091a1;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #3091a1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid #3091a1;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #3091a1 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline-right::after {
+    left: -13px;
+    background-color: #3091a1;
+}
+
+
 @media screen and (min-width: 400px) {
-    .discografia h4 {
+    .title-discografia {
         font-size: 2.3rem;
     }
     .timeline {
@@ -32,15 +121,68 @@
     }
 }
 
-@media screen and (min-width: 576px) {
-    .discografia h4 {
-        padding-bottom: 40px;
-
+@media screen and (min-width: 992px) {
+    .discografia-container {
+        margin-top: 100px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .discografia-container {
+        transform: skew(0deg, 0deg) translateY(-20px);
+    }
+
+    .discografia-container:before {
+        background-image: none;
+    }
+    
     .discografia {
         transform: skew(0deg, 0deg) translateY(-20px);
     }
+    .timeline-item {
+        width: 100%;
+    }
 }
+
+
+@media screen and (min-width: 1200px),
+screen and (max-width:767px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-item {
+        width: 100%;
+        min-width: 250px;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-item::before {
+        left: 60px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #3091a1 transparent transparent;
+    }
+
+      /* Make sure all circles are at the same spot */
+    .timeline-left::after,
+    .timeline-right::after {
+        left: 17px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .timeline-right {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timeline-item {
+        width: 115%;
+    }
+}
+
