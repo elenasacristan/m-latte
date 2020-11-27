@@ -5,7 +5,7 @@ const Foto = ({ rotate, foto }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className={`mb-1 mb-lg-5 foto-container mx-auto ${rotate}`}>
+    <div className={`mb-1 mb-lg-5 foto-container p-sm-3 mx-auto ${rotate}`}>
       {loaded ? null : (
         <div
           style={{
