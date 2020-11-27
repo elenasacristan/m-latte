@@ -1,6 +1,6 @@
 .fotos {
     padding-top: 110px;
-    width: 85%;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 0%, #dfdfdf 20%, #a1d5dd 84%, #fff 100%);
 }
 
 .fotos-container {
@@ -8,10 +8,12 @@
     column-gap: 3rem; 
 }
 
+.fotos a{
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
 @media only screen and (min-width: 992px) {
-    .fotos {
-        width: 100%;
-    }
     .fotos-container {
         column-count: 2;
     }
