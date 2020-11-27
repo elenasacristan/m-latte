@@ -11,7 +11,7 @@ const Activity = ({ color, actividad, tipo }) => {
         <Link
           to={`/actividades/${tipo}/${actividad.id}`}
           style={{ "backgroundColor": color }}
-          className="btn btn-lg mb-4"
+          className="btn btn-lg mb-4 p-1"
         >
           Detalles
         </Link>
