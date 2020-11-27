@@ -45,7 +45,7 @@ DEBUG = False
 # ALLOWED_HOSTS = ['desktop-m46m9jt','127.0.0.1']
 # ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
 # in development 
 # if DEBUG:
