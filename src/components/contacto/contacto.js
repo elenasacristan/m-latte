@@ -127,11 +127,11 @@ const Contacto = () => {
           <div className="mt-5 mt-lg-0 col col-lg-5">
             {errorMessage.error || errorMessage.message ? (
               errorMessage.error ? (
-                <p className="mx-auto error-msg text-center pt-2 mx-auto">
+                <p className="mx-auto error-msg text-center py-1 mx-auto">
                   {errorMessage.error}
                 </p>
               ) : (
-                <p className="success-msg text-center pt-2 mx-auto">
+                <p className="success-msg text-center py-1 mx-auto">
                   {errorMessage.message}
                 </p>
               )
@@ -175,7 +175,7 @@ const Contacto = () => {
                   name="descripcion"
                 ></textarea>
               </div>
-              <input className="mt-2 btn w-100" type="submit" value="Enviar" />
+              <input className="mt-2 p-1 btn w-100" type="submit" value="Enviar" />
             </form>
           </div>
         </div>

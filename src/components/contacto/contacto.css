@@ -1,15 +1,19 @@
 .contacto {
-    padding-top: 14vh;
-    background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, #dce0e0 60%, #a1d5dd 84%, #fff 100%);
-}
-
-.contacto img{
-    width: 100%;
+    padding-top: 110px;
+    min-height: 85vh;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 30%, #dfdfdf 60%, #a1d5dd 84%, #fff 100%);
 }
 
 .contacto p{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+.contacto .intro-contact p {
     color: #3091a1;
+}
+
+.contacto img {
+    width: 100%;
 }
 
 .contacto form {
@@ -17,13 +21,25 @@
 }
 
 .contacto label {
+    color: #3091a1;
+    font-size: 0.8rem;
+    font-weight: bold;
     margin-bottom: 0;
+}
+
+.contacto input, .contacto textarea {
+    border: none;
+}
+
+.form-control:focus {
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(48 145 161 / 33%);
 }
 
 .contacto .btn {
     background-color: #3091a1;
     color: white;
-    padding-bottom: 0;
     border: none;
 }
 
@@ -35,7 +51,6 @@
     outline: none;
     box-shadow: none;
 }
-
 
 .success-msg,
 .error-msg {
@@ -53,24 +68,13 @@
 }
 
 .error-email {
-    color: red;
+    color: #e16b6b;
     font-size: 0.8rem;
+    font-weight: bold;
 }
-
-
 
 @media screen and (min-width: 450px) {
     .contacto img {
         width: 70%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .contacto img {
-        width: 70%;
-    }
-
-    .contacto {
-        min-height: 85vh;
     }
 }
