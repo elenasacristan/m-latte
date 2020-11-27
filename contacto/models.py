@@ -22,4 +22,4 @@ class IntroContacto(models.Model):
         verbose_name_plural = "6.1 TEXTO CONTACTO"
 
     def __str__(self):
-        return self.texto
+        return f'{self.titulo.upper()} - click para modificar'
