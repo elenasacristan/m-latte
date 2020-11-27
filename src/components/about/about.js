@@ -20,7 +20,7 @@ const About = () => {
   } else {
     return (
       <div className="bkg-about">
-        <div className="about mt-5 mx-auto container px-3 px-sm-1" id="about">
+        <div className="about mt-5 mx-auto container px-3 px-sm-4" id="about">
           <div className="mb-5 container-sobre p-3 p-sm-5">
             <h2 className="main-title title mb-sm-4">{aboutMe.titulo0}</h2>
             {aboutMe.descripcion0 &&

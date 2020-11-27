@@ -7,7 +7,8 @@
 }
 
 .container-sobre {
-    border: 5px double #3092a14f;
+    border: 10px double #b7d8dd91;
+    box-shadow: 10px 15px 0px 0px #e6e6e6;
     color: #6f6f6f;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
