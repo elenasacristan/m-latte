@@ -8,8 +8,8 @@ const CardDetail = ({ actividad }) => {
         className={`text-center card-detail-icon fa ${actividad.logo_name}`}
         aria-hidden="true"
       ></i>
-      <h4 className="pl-3 pl-sm-5 card-detail-title2">{actividad.titulo2}</h4>
-      <ul className="pb-5 pb-sm-4">
+      <h4 className="pl-3 pl-sm-5 card-detail-title2 pt-5 pb-3">{actividad.titulo2}</h4>
+      <ul className="pb-5 pb-sm-4 ml-sm-5">
         {actividad.destinatarios && actividad.destinatarios.split("\\").map((destinatario) => (
           <li key={destinatario}>{destinatario}</li>
         ))}
