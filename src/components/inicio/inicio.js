@@ -31,9 +31,9 @@ const Inicio = () => {
   }, []);
 
   if (
-    Object.keys(inicio) > 0 &&
-    queQueremos.length > 0 &&
-    setQueHacemos.length > 0
+    Object.keys(inicio) < 1 ||
+    queQueremos.length < 1 ||
+    setQueHacemos.length < 1
   ) {
     return <Spinner />;
   } else {
