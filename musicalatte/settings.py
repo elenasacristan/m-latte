@@ -29,6 +29,7 @@ if ENVIRONMENT == 'DEV':
     development = True
 else:
     development = False
+# development = True
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

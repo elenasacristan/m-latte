@@ -74,6 +74,11 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+     .colaboracion {
+        box-shadow: 1px 1px 4px grey;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .disco-titulo {
