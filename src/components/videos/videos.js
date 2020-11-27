@@ -18,15 +18,16 @@ const Videos = () => {
     return <Spinner />;
   } else {
     return (
-      <div className="videos container px-2 pb-5">
-        <h2 className="main-title title text-center text-lg-left mt-4 mb-5">
-          Videos
-        </h2>
-
-        <div className="videos-container text-center">
-          {videos.map((video) => (
-            <Video key={video.id} video={video} />
-          ))}
+      <div className="videos">
+        <div className="titulo-videos pb-5">
+          <h2 className="main-title title text-center text-lg-left mt-4 mb-4">
+            Videos
+          </h2>
+          <div className="videos-container text-center">
+            {videos.map((video) => (
+              <Video key={video.id} video={video} />
+            ))}
+          </div>
         </div>
       </div>
     );

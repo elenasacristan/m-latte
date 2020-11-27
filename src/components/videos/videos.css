@@ -1,19 +1,34 @@
 .videos {
     padding-top: 110px;
-    width: 90%;
+    background-image: linear-gradient(to bottom, rgb(255 255 255) 0%, #dddddd 30%, #c8e3e4 80%, #fff 100%);
+}
+
+.titulo-videos {
+    width: 80%;
+    margin:auto;
 }
 
 .videos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-    justify-content: center;
-    grid-gap: 60px;
+    display: block;
+}
+
+.video-container {
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 400px) {
+    .videos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+        justify-content: center;
+        grid-gap: 40px;
+    }
+    .video-container {
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (min-width: 608px) {
-    .videos {
-        width: 100%;
-    }
     .videos-container {
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }

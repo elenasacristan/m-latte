@@ -10,6 +10,7 @@ const Video = ({ video }) => {
         title={video.titulo}
         allowFullScreen={true}
         frameBorder="0"
+        className="p-1 p-sm-2"
       ></iframe>
     </div>
   );
