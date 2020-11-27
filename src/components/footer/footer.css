@@ -1,13 +1,16 @@
 .footer {
   background-image: url("../../common/images/footer.png");
-  padding-bottom: 50px;
-  width: 100%;
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   position: relative;
   z-index: 1;
+}
+
+/* to show while fetching the API*/
+.placeholder-footer {
+  height: 20vh;
 }
 
 .footer h6 {
@@ -26,18 +29,14 @@
 }
 
 .footer .fa:hover {
-  color: #acacac;
+  color: rgba(253, 253, 253, 0.822);
 }
 
-.placeholder-footer {
-  background-color: #383838;
-  height: 20vh;
-}
+
 
 @media screen and (min-width: 400px) {
   .footer h6 {
     font-size: 2rem;
-    color:#ffffff;
   }
 
   .footer p {

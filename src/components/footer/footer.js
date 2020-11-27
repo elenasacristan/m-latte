@@ -14,7 +14,7 @@ const Footer = () => {
   if (
     Object.keys(footer) < 1 
   ) {
-    return <div className="placeholder-footer"></div>;
+    return <div className="footer placeholder-footer"></div>;
   } else {
     return (
       <div className="footer pt-4 p-3">

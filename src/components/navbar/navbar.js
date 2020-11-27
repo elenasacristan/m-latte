@@ -117,7 +117,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link onClick={closeDropDown} className="nav-link" to="/Contacto">
+            <Link onClick={closeDropDown} className="nav-link link-contact" to="/Contacto">
               Contacto
             </Link>
           </li>
