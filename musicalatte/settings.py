@@ -25,10 +25,10 @@ except ImportError:
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT')
 
-# if ENVIRONMENT == 'DEV':
-#     development = True
-# else:
-#     development = False
+if ENVIRONMENT == 'DEV':
+    development = True
+else:
+    development = False
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,19 +41,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# ALLOWED_HOSTS = ['desktop-m46m9jt','127.0.0.1']
-# ALLOWED_HOSTS = []
+DEBUG = development
+
 
 ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
-# in development 
-# if DEBUG:
-#     ALLOWED_HOSTS = []
-# else:
-#     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
-
-# ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com']
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
 
 INSTALLED_APPS = [
