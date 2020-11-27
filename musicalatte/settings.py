@@ -47,10 +47,10 @@ DEBUG = development
 
 ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
-if DEBUG:
-    ALLOWED_HOSTS = []
-else:
-    ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
+# if DEBUG:
+#     ALLOWED_HOSTS = []
+# else:
+#     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
 
 INSTALLED_APPS = [
