@@ -29,7 +29,7 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT')
 #     development = True
 # else:
 #     development = False
-development = True
+development = False
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -59,11 +59,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'admin_reorder',
+    # 'admin_reorder',
     'inicio',
     'sobre_mi',
     'actividades',
@@ -74,7 +74,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -83,7 +82,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'admin_reorder.middleware.ModelAdminReorder',
+    # 'admin_reorder.middleware.ModelAdminReorder',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'musicalatte.urls'
@@ -110,9 +110,20 @@ WSGI_APPLICATION = 'musicalatte.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
+
+# in development
+if development==True:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+# in production
+else:
+    DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+    }
 
 
 # Password validation
@@ -147,6 +158,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+# Configure app for Heroku deployment
+django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -187,17 +201,17 @@ cloudinary.config(
 )
 
 
-ADMIN_REORDER = (
-    # Keep original label and models
-    'auth',
-    'users',
-    'inicio',
-    'sobre_mi',
-    'actividades',
-    'galeria',
-    'colabora',
-    'contacto',
-    'footer'
-)
+# ADMIN_REORDER = (
+#     # Keep original label and models
+#     'auth',
+#     'users',
+#     'inicio',
+#     'sobre_mi',
+#     'actividades',
+#     'galeria',
+#     'colabora',
+#     'contacto',
+#     'footer'
+# )
 
-ADMINS = [('elena', 'elenitta1983@yahoo.es')]
+# ADMINS = [('elena', 'elenitta1983@yahoo.es')]
