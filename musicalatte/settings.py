@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    # 'admin_reorder',
+    'admin_reorder',
     'inicio',
     'sobre_mi',
     'actividades',
@@ -83,7 +83,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'admin_reorder.middleware.ModelAdminReorder',
+    'admin_reorder.middleware.ModelAdminReorder',
     'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -188,7 +188,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
         #    'rest_framework.permissions.AllowAny',
-
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
     ]
 }
@@ -205,17 +204,17 @@ cloudinary.config(
 )
 
 
-# ADMIN_REORDER = (
-#     # Keep original label and models
-#     'auth',
-#     'users',
-#     'inicio',
-#     'sobre_mi',
-#     'actividades',
-#     'galeria',
-#     'colabora',
-#     'contacto',
-#     'footer'
-# )
+ADMIN_REORDER = (
+    # Keep original label and models
+    'auth',
+    'users',
+    'inicio',
+    'sobre_mi',
+    'actividades',
+    'galeria',
+    'colabora',
+    'contacto',
+    'footer'
+)
 
 # ADMINS = [('elena', 'elenitta1983@yahoo.es')]
