@@ -173,7 +173,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
 
-# WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build', 'root')
+# the line below solves issue with manifest.json
 WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build')
 
 
