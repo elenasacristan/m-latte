@@ -26,11 +26,10 @@ except ImportError:
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT')
 
-# if ENVIRONMENT == 'DEV':
-#     development = True
-# else:
-#     development = False
-development = False
+if ENVIRONMENT == 'DEV':
+    development = True
+else:
+    development = False
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,12 +45,10 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 DEBUG = development
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
-
-# if DEBUG:
-#     ALLOWED_HOSTS = []
-# else:
-#     ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['127.0.0.1', 'musicalatte.herokuapp.com', 'production-musicalatte.herokuapp.com']
 
 
 INSTALLED_APPS = [
@@ -192,7 +189,6 @@ REST_FRAMEWORK = {
     ]
 }
 
-# CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000"
 ]
@@ -216,5 +212,3 @@ ADMIN_REORDER = (
     'contacto',
     'footer'
 )
-
-# ADMINS = [('elena', 'elenitta1983@yahoo.es')]
