@@ -5,7 +5,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/inicio/', include('inicio.api.urls')),
     path('api/sobremi/', include('sobre_mi.api.urls')),
@@ -13,7 +12,8 @@ urlpatterns = [
     path('api/galeria/', include('galeria.api.urls')),
     path('api/colabora/', include('colabora.api.urls')),
     path('api/footer/', include('footer.api.urls')),
-    path('api/contacto/', include('contacto.api.urls'))
+    path('api/contacto/', include('contacto.api.urls')),
+    path('admin/', admin.site.urls),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
