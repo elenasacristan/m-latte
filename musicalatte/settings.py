@@ -167,11 +167,12 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'     
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/static')] 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/static')] 
 
 # the line below solves issue with manifest.json
 WHITENOISE_ROOT = os.path.join(BASE_DIR, 'build')
@@ -186,14 +187,16 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
+           'rest_framework.permissions.AllowAny',
+
+        # 'rest_framework.permissions.IsAuthenticatedOrReadOnly'
     ]
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = [
-#     "http://localhost:3000"
-# ]
+# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000"
+]
 
 cloudinary.config( 
   cloud_name = os.environ.get("CLOUD_NAME"), 
