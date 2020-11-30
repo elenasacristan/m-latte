@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import django_heroku
+# import django_heroku
 import dj_database_url
 from pathlib import Path
 
@@ -158,7 +158,7 @@ USE_TZ = True
 
 
 # Configure app for Heroku deployment
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
